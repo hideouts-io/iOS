@@ -1,0 +1,2747 @@
+{"restore_payload_version":"Unknown","restore_type":"OTAUpdate","os_version":"16P3133","itunes_version":"16P3133","bug_type":"183","name":"iPhoneRestore","restore_error":"-1"}
+SYSLOG: Mar 14 01:14:35 localhost bootlog[0] <Notice>: BOOT_TIME 1552526075 674621
+[01:14:36.0078-GMT]{3>7} CHECKPOINT NOTICE: Image4 device: AP nonce clearable
+[01:14:36.0079-GMT]{3>7} CHECKPOINT NOTICE: Pre-existing NVRAM variable: auto-boot=true
+[01:14:36.0079-GMT]{3>7} CHECKPOINT NOTICE: Pre-existing NVRAM variable: ota-uuid=B0317058-CAEE-41C5-BF72XXXX>>>>>F328
+[01:14:36.0079-GMT]{3>7} CHECKPOINT NOTICE: Pre-existing NVRAM variable: ota-outcome=initial_monitor
+[01:14:36.0079-GMT]{3>7} CHECKPOINT NOTICE: Pre-existing NVRAM variable: ota-retry-enabled=true
+void clear_stale_ota_nvram(void)
+executing /usr/sbin/nvram -d boot-breadcrumbs
+boot-breadcrumbs
+executing /usr/sbin/nvram -d OTA-pre-conversion
+OTA-pre-conversion
+executing /usr/sbin/nvram -d OTA-post-conversion
+OTA-post-conversion
+executing /usr/sbin/nvram -d ota-conv-panic-indicator
+ota-conv-panic-indicator
+executing /usr/sbin/nvram -d OTA-fsck-metrics
+OTA-fsck-metrics
+executing /usr/sbin/nvram -d ota-outcome
+ota-outcome
+executing /usr/sbin/nvram -d restore-outcome
+restore-outcome
+executing /usr/sbin/nvram -d ota-anomalies
+ota-anomalies
+executing /usr/sbin/nvram -d restore-anomalies
+restore-anomalies
+executing /usr/sbin/nvram -d ota-child-failures
+ota-child-failures
+executing /usr/sbin/nvram -d restore-child-failures
+restore-child-failures
+executing /usr/sbin/nvram -d ota-step-monitor
+ota-step-monitor
+executing /usr/sbin/nvram -d restore-step-monitor
+restore-step-monitor
+executing /usr/sbin/nvram -d ota-step-ids
+ota-step-ids
+executing /usr/sbin/nvram -d restore-step-ids
+restore-step-ids
+executing /usr/sbin/nvram -d ota-step-names
+ota-step-names
+executing /usr/sbin/nvram -d restore-step-names
+restore-step-names
+executing /usr/sbin/nvram -d ota-step-results
+ota-step-results
+executing /usr/sbin/nvram -d restore-step-results
+restore-step-results
+executing /usr/sbin/nvram -d ota-step-warnings
+ota-step-warnings
+executing /usr/sbin/nvram -d restore-step-warnings
+restore-step-warnings
+executing /usr/sbin/nvram -d ota-step-codes
+ota-step-codes
+executing /usr/sbin/nvram -d restore-step-codes
+restore-step-codes
+executing /usr/sbin/nvram -d ota-step-domains
+ota-step-domains
+executing /usr/sbin/nvram -d restore-step-domains
+restore-step-domains
+executing /usr/sbin/nvram -d ota-step-error
+ota-step-error
+executing /usr/sbin/nvram -d restore-step-error
+restore-step-error
+executing /usr/sbin/nvram -d ota-step-uptime
+ota-step-uptime
+executing /usr/sbin/nvram -d restore-step-uptime
+restore-step-uptime
+executing /usr/sbin/nvram -d ota-step-battery-level
+ota-step-battery-level
+executing /usr/sbin/nvram -d restore-step-battery-level
+restore-step-battery-level
+executing /usr/sbin/nvram -d ota-step-external-power
+ota-step-external-power
+executing /usr/sbin/nvram -d restore-step-external-power
+restore-step-external-power
+executing /usr/sbin/nvram -d ota-step-user-progress
+ota-step-user-progress
+executing /usr/sbin/nvram -d restore-step-user-progress
+restore-step-user-progress
+executing /usr/sbin/nvram -d ota-retry-monitor
+ota-retry-monitor
+executing /usr/sbin/nvram -d restore-retry-monitor
+restore-retry-monitor
+executing /usr/sbin/nvram -d ota-retry-ids
+ota-retry-ids
+executing /usr/sbin/nvram -d restore-retry-ids
+restore-retry-ids
+executing /usr/sbin/nvram -d ota-retry-names
+ota-retry-names
+executing /usr/sbin/nvram -d restore-retry-names
+restore-retry-names
+executing /usr/sbin/nvram -d ota-retry-results
+ota-retry-results
+executing /usr/sbin/nvram -d restore-retry-results
+restore-retry-results
+executing /usr/sbin/nvram -d ota-retry-warnings
+ota-retry-warnings
+executing /usr/sbin/nvram -d restore-retry-warnings
+restore-retry-warnings
+executing /usr/sbin/nvram -d ota-retry-codes
+ota-retry-codes
+executing /usr/sbin/nvram -d restore-retry-codes
+restore-retry-codes
+executing /usr/sbin/nvram -d ota-retry-domains
+ota-retry-domains
+executing /usr/sbin/nvram -d restore-retry-domains
+restore-retry-domains
+executing /usr/sbin/nvram -d ota-retry-error
+ota-retry-error
+executing /usr/sbin/nvram -d restore-retry-error
+restore-retry-error
+executing /usr/sbin/nvram -d ota-retry-uptime
+ota-retry-uptime
+executing /usr/sbin/nvram -d restore-retry-uptime
+restore-retry-uptime
+executing /usr/sbin/nvram -d ota-retry-battery-level
+ota-retry-battery-level
+executing /usr/sbin/nvram -d restore-retry-battery-level
+restore-retry-battery-level
+executing /usr/sbin/nvram -d ota-retry-external-power
+ota-retry-external-power
+executing /usr/sbin/nvram -d restore-retry-external-power
+restore-retry-external-power
+executing /usr/sbin/nvram -d ota-retry-user-progress
+ota-retry-user-progress
+executing /usr/sbin/nvram -d restore-retry-user-progress
+restore-retry-user-progress
+executing /usr/sbin/nvram -d ota-perform-shutdown
+ota-perform-shutdown
+executing /usr/sbin/nvram -d restore-perform-shutdown
+restore-perform-shutdown
+[01:14:36.0492-GMT]{3>7} CHECKPOINT PROGRESS: START (unknown) -> (initial_engine)
+[01:14:36.0492-GMT]{3>7} CHECKPOINT NOTICE: NVRAM access available on initial check
+ota-outcome = initial_engine
+executing /usr/sbin/nvram ota-outcome=initial_engine
+[01:14:36.0681-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x0400] umask
+ota-step-ids = {0x11030400:1}
+ota-step-names = {0x11030400:umask}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0682-GMT]{3>7} CHECKPOINT END: MAIN:[0x0400] umask
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0683-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x0402] setvbuf
+ota-step-ids = {0x11030402:2}
+ota-step-names = {0x11030402:setvbuf}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0684-GMT]{3>7} CHECKPOINT END: MAIN:[0x0402] setvbuf
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0685-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x0403] kernel_logger_thread
+ota-step-ids = {0x11030403:3}
+ota-step-names = {0x11030403:kernel_logger_thread}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0686-GMT]{3>7} CHECKPOINT END: MAIN:[0x0403] kernel_logger_thread
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0687-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x0404] update_root_mount
+ota-step-ids = {0x11030404:4}
+ota-step-names = {0x11030404:update_root_mount}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+unable to open /dev/klog: Resource busy
+[01:14:36.0689-GMT]{3>7} CHECKPOINT END: MAIN:[0x0404] update_root_mount
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0690-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x0405] disable_watchdog
+ota-step-ids = {0x11030405:5}
+ota-step-names = {0x11030405:disable_watchdog}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0691-GMT]{3>7} CHECKPOINT END: MAIN:[0x0405] disable_watchdog
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+[01:14:36.0692-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x0406] set_progress_0
+ota-step-ids = {0x11030406:6}
+ota-step-names = {0x11030406:set_progress_0}
+ota-step-uptime = 1
+ota-step-user-progress = -1
+found display: primary
+unable to get framebuffer
+No framebuffer but an internal display. Ok on bridge but weird anywhere else.
+ramrod_display_set_granular_progress_forced: 0.000000
+[01:14:36.0698-GMT]{3>7} CHECKPOINT END: MAIN:[0x0406] set_progress_0
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0699-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x040A] load_plugins
+ota-step-ids = {0x1103040A:7}
+ota-step-names = {0x1103040A:load_plugins}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+patchd: ramrod_register_plugin_opt(5250): built Jan  2 2019 21:46:42.
+patchd: ramrod_register_plugin_opt(5261): using fail forward entry-point
+loaded plugin: patchd
+plugin contains 1 handlers
+	patchd_failforward_patch (AUTONOMOUS HANDLER)
+plugin has opted out of default SEP loading from system partition.
+[01:14:36.0705-GMT]{3>7} CHECKPOINT END: MAIN:[0x040A] load_plugins
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0706-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x040B] should_disable_sep_load
+ota-step-ids = {0x1103040B:8}
+ota-step-names = {0x1103040B:should_disable_sep_load}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0707-GMT]{3>7} CHECKPOINT END: MAIN:[0x040B] should_disable_sep_load
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0708-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x040C] load_sep_os
+ota-step-ids = {0x1103040C:9}
+ota-step-names = {0x1103040C:load_sep_os}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0709-GMT]{3>7} CHECKPOINT END: MAIN:[0x040C] load_sep_os
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0710-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x040D] create_listen_socket
+ota-step-ids = {0x1103040D:10}
+ota-step-names = {0x1103040D:create_listen_socket}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0711-GMT]{3>7} CHECKPOINT END: MAIN:[0x040D] create_listen_socket
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0712-GMT]{3>7} CHECKPOINT BEGIN: MAIN:[0x040E] enable_usb
+ota-step-ids = {0x1103040E:11}
+ota-step-names = {0x1103040E:enable_usb}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+skipping USB initialization
+[01:14:36.0713-GMT]{3>7} CHECKPOINT END: MAIN:[0x040E] enable_usb
+ota-step-ids = {}
+ota-step-names = {}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0714-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x1400] ff_start
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0715-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0500] started
+ota-step-ids = {0x11031400:12;0x11030500:13}
+ota-step-names = {0x11031400:ff_start;0x11030500:started}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+patchd: patchd_common_start_block_invoke(2239): Started patchd.
+[01:14:36.0716-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0500] started
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0717-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0501] copy_ota_uuid
+ota-step-ids = {0x11031400:12;0x11030501:14}
+ota-step-names = {0x11031400:ff_start;0x11030501:copy_ota_uuid}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+patchd: log_ota_uuid(1977): Update UUID=B0317058-CAEE-41C5-BF72XXXX>>>>>F328
+[01:14:36.0718-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0501] copy_ota_uuid
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0719-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0502] libpartition_callbacks
+ota-step-ids = {0x11031400:12;0x11030502:15}
+ota-step-names = {0x11031400:ff_start;0x11030502:libpartition_callbacks}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0720-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0502] libpartition_callbacks
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0721-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0503] libauthinstall_callback
+ota-step-ids = {0x11031400:12;0x11030503:16}
+ota-step-names = {0x11031400:ff_start;0x11030503:libauthinstall_callback}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0722-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0503] libauthinstall_callback
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0723-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0504] alloc_context
+ota-step-ids = {0x11031400:12;0x11030504:17}
+ota-step-names = {0x11031400:ff_start;0x11030504:alloc_context}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0724-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0504] alloc_context
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0725-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0523] init_hw_model
+ota-step-ids = {0x11031400:12;0x11030523:18}
+ota-step-names = {0x11031400:ff_start;0x11030523:init_hw_model}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+patchd: patchd_common_start_block_invoke(2274): hw_model=J680AP
+[01:14:36.0726-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0523] init_hw_model
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+[01:14:36.0727-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0505] set_progress_0
+ota-step-ids = {0x11031400:12;0x11030505:19}
+ota-step-names = {0x11031400:ff_start;0x11030505:set_progress_0}
+ota-step-uptime = 1
+ota-step-user-progress = 0
+ramrod_display_set_granular_progress_forced: 2.000000
+[01:14:36.0728-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0505] set_progress_0
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 2
+[01:14:36.0729-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0506] dispatch_progress
+ota-step-ids = {0x11031400:12;0x11030506:20}
+ota-step-names = {0x11031400:ff_start;0x11030506:dispatch_progress}
+ota-step-uptime = 1
+ota-step-user-progress = 2
+[01:14:36.0730-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0506] dispatch_progress
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 2
+[01:14:36.0731-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0507] wait_for_internal_media
+ota-step-ids = {0x11031400:12;0x11030507:21}
+ota-step-names = {0x11031400:ff_start;0x11030507:wait_for_internal_media}
+ota-step-uptime = 1
+ota-step-user-progress = 2
+Searching for NAND service
+patchd: patchd_common_start_block_invoke_2(2450): starting always moving progress bar
+found display: primary
+unable to get framebuffer
+No framebuffer but an internal display. Ok on bridge but weird anywhere else.
+patchd: patchd_common_start_block_invoke_2(2459): will retry opening framebuffer...
+Found NAND service: AppleANS2NVMeController
+NAND initialized. Waiting for devnode.
+entering ramrod_probe_media
+patchd: patchd_common_start_block_invoke(2512): internal media ready.
+patchd: patchd_common_start_block_invoke(2513): 0 seconds elapsed so far
+[01:14:36.0735-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0507] wait_for_internal_media
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 1
+ota-step-user-progress = 2
+[01:14:36.0735-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0508] update_NAND_firmware
+ota-step-ids = {0x11031400:12;0x11030508:22}
+ota-step-names = {0x11031400:ff_start;0x11030508:update_NAND_firmware}
+ota-step-uptime = 1
+ota-step-user-progress = 2
+entering update_NAND
+executing /usr/bin/nvmefwupdater --query
+S4E/<<<<<IMEI>>>>>>3.pak
+NAND update file: "/usr/standalone/firmware/S4E/<<<<<IMEI>>>>>>3.pak"
+executing /usr/bin/nvmefwupdater --validate /usr/standalone/firmware/S4E/<<<<<IMEI>>>>>>3.pak
+s4e-bfh-paramsXXXX>>>>>> 00040001 004880E6 00060002 100008A8 
+Performing BFH OFW stage...
+set_pci_port_state: result=0
+set_pci_port_state: result=0
+returning Regular update
+executing /usr/bin/nvmefwupdater --update /usr/standalone/firmware/S4E/<<<<<IMEI>>>>>>3.pak
+Downloading FW...
+Activating FW...
+Successfully updated FW...
+patchd: patchd_common_start_block_invoke(2547): Recording trace point 42
+ota-breadcrumbs = 2:p
+executing /usr/sbin/nvram ota-breadcrumbs=2:p
+[01:14:42.0701-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0508] update_NAND_firmware
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0702-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0509] asp_nand_set_writable
+ota-step-ids = {0x11031400:12;0x11030509:23}
+ota-step-names = {0x11031400:ff_start;0x11030509:asp_nand_set_writable}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0703-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0509] asp_nand_set_writable
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0704-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x050A] reprobe_storage_device
+ota-step-ids = {0x11031400:12;0x1103050A:24}
+ota-step-names = {0x11031400:ff_start;0x1103050A:reprobe_storage_device}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+entering ramrod_reprobe_device_path
+[01:14:42.0720-GMT]{3>7} CHECKPOINT END: PATCHD:[0x050A] reprobe_storage_device
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0721-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x050B] reprobe_firmware_device
+ota-step-ids = {0x11031400:12;0x1103050B:25}
+ota-step-names = {0x11031400:ff_start;0x1103050B:reprobe_firmware_device}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+entering ramrod_reprobe_device
+EmbeddedDeviceTypeFirmware does not exist, skipping
+[01:14:42.0724-GMT]{3>7} CHECKPOINT END: PATCHD:[0x050B] reprobe_firmware_device
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0725-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x054F] create_readwrite_ramdisk
+ota-step-ids = {0x11031400:12;0x1103054F:26}
+ota-step-names = {0x11031400:ff_start;0x1103054F:create_readwrite_ramdisk}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+executing /usr/sbin/hdik -nomount ram://51200
+/dev/disk3          	                               	
+executing /sbin/newfs_hfs -J -v readwrite_ramdisk /dev/disk3
+Initialized /dev/rdisk3 as a 25 MB case-insensitive HFS Plus volume with a 512k journal
+executing /sbin/fsck_hfs -fdy /dev/disk3
+journal_replay(/dev/disk3) returned 0
+** /dev/rdisk3
+	Using cacheBlockSize=32K cacheTotalBlock=1912 cacheSize=61184K.
+   Executing fsck_hfs (version hfs-407.200.4).
+** Checking Journaled HFS Plus volume.
+   The volume name is readwrite_ramdisk
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume readwrite_ramdisk appears to be OK.
+	CheckHFS returned 0, fsmodified = 0
+executing /sbin/mount_hfs /dev/disk3 /mnt5
+mount_hfs: Could not create property for re-key environment check: No such file or directory
+entering show_service_nodes
+disk0
+
+IOBlockStorageDriver RegistryID : 0x100000324 Busy State : 0x0 Service State : 0x1e
+NS_01 RegistryID : 0x100000322 Busy State : 0x0 Service State : 0x1e
+AppleANS2NVMeController RegistryID : 0x100000281 Busy State : 0x0 Service State : 0x1e
+RTBuddyV2 RegistryID : 0x10000024e Busy State : 0x0 Service State : 0x1e
+iop-ans-nub RegistryID : 0x10000015d Busy State : 0x0 Service State : 0x1e
+AppleASCANS2 RegistryID : 0x1000001ef Busy State : 0x0 Service State : 0x0
+ans RegistryID : 0x10000015c Busy State : 0x0 Service State : 0x1e
+AppleT8012IO RegistryID : 0x1000001b9 Busy State : 0x5 Service State : 0x1e
+arm-io RegistryID : 0x10000010e Busy State : 0x1 Service State : 0x1e
+AppleARMPE RegistryID : 0x1000001a6 Busy State : 0x1 Service State : 0x1e
+J680AP RegistryID : 0x1000001a5 Busy State : 0x1 Service State : 0x1e
+Root RegistryID : 0x100000100 Busy State : 0x0 Service State : 0x0
+----
+
+disk1
+
+IOBlockStorageDriver RegistryID : 0x100000331 Busy State : 0x0 Service State : 0x1e
+NS_02 RegistryID : 0x100000330 Busy State : 0x0 Service State : 0x1e
+AppleANS2NVMeController RegistryID : 0x100000281 Busy State : 0x0 Service State : 0x1e
+RTBuddyV2 RegistryID : 0x10000024e Busy State : 0x0 Service State : 0x1e
+iop-ans-nub RegistryID : 0x10000015d Busy State : 0x0 Service State : 0x1e
+AppleASCANS2 RegistryID : 0x1000001ef Busy State : 0x0 Service State : 0x0
+ans RegistryID : 0x10000015c Busy State : 0x0 Service State : 0x1e
+AppleT8012IO RegistryID : 0x1000001b9 Busy State : 0x5 Service State : 0x1e
+arm-io RegistryID : 0x10000010e Busy State : 0x1 Service State : 0x1e
+AppleARMPE RegistryID : 0x1000001a6 Busy State : 0x1 Service State : 0x1e
+J680AP RegistryID : 0x1000001a5 Busy State : 0x1 Service State : 0x1e
+Root RegistryID : 0x100000100 Busy State : 0x0 Service State : 0x0
+----
+
+disk2
+
+IOBlockStorageDriver RegistryID : 0x100000338 Busy State : 0x0 Service State : 0x1e
+NS_03 RegistryID : 0x100000337 Busy State : 0x0 Service State : 0x1e
+AppleANS2NVMeController RegistryID : 0x100000281 Busy State : 0x0 Service State : 0x1e
+RTBuddyV2 RegistryID : 0x10000024e Busy State : 0x0 Service State : 0x1e
+iop-ans-nub RegistryID : 0x10000015d Busy State : 0x0 Service State : 0x1e
+AppleASCANS2 RegistryID : 0x1000001ef Busy State : 0x0 Service State : 0x0
+ans RegistryID : 0x10000015c Busy State : 0x0 Service State : 0x1e
+AppleT8012IO RegistryID : 0x1000001b9 Busy State : 0x5 Service State : 0x1e
+arm-io RegistryID : 0x10000010e Busy State : 0x1 Service State : 0x1e
+AppleARMPE RegistryID : 0x1000001a6 Busy State : 0x1 Service State : 0x1e
+J680AP RegistryID : 0x1000001a5 Busy State : 0x1 Service State : 0x1e
+Root RegistryID : 0x100000100 Busy State : 0x0 Service State : 0x0
+----
+
+disk3
+
+IOBlockStorageDriver RegistryID : 0x100000359 Busy State : 0x0 Service State : 0x1e
+IODiskImageBlockStorageDeviceInKernel RegistryID : 0x100000358 Busy State : 0x0 Service State : 0x1e
+IOHDIXHDDriveInKernel RegistryID : 0x100000357 Busy State : 0x0 Service State : 0x1e
+KDIDiskImageNub RegistryID : 0x100000356 Busy State : 0x0 Service State : 0x1e
+KDIReadWriteDiskImage RegistryID : 0x100000355 Busy State : 0x0 Service State : 0x1e
+KDIRAMBackingStore RegistryID : 0x100000352 Busy State : 0x0 Service State : 0x1e
+ram://51200 RegistryID : 0x100000351 Busy State : 0x0 Service State : 0x1e
+IOHDIXController RegistryID : 0x1000001ad Busy State : 0x0 Service State : 0x1e
+IOResources RegistryID : 0x1000001a8 Busy State : 0x0 Service State : 0x1e
+J680AP RegistryID : 0x1000001a5 Busy State : 0x1 Service State : 0x1e
+Root RegistryID : 0x100000100 Busy State : 0x0 Service State : 0x0
+----
+
+[01:14:42.0791-GMT]{3>7} CHECKPOINT END: PATCHD:[0x054F] create_readwrite_ramdisk
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0792-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x050C] probe_media
+ota-step-ids = {0x11031400:12;0x1103050C:27}
+ota-step-names = {0x11031400:ff_start;0x1103050C:probe_media}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+entering ramrod_probe_media
+device partitioning scheme is GPT
+APFS Container /dev/disk0s1
+device is APFS formatted
+unexpected partition 'FC901B02-42E0-4004-9014XXXX>>>>>B11D' - skipping
+[01:14:42.0795-GMT]{3>7} CHECKPOINT END: PATCHD:[0x050C] probe_media
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0796-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x050D] find_data_partition_reprobe
+ota-step-ids = {0x11031400:12;0x1103050D:28}
+ota-step-names = {0x11031400:ff_start;0x1103050D:find_data_partition_reprobe}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0797-GMT]{3>7} CHECKPOINT END: PATCHD:[0x050D] find_data_partition_reprobe
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0798-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x050E] find_system_partition_reprobe
+ota-step-ids = {0x11031400:12;0x1103050E:29}
+ota-step-names = {0x11031400:ff_start;0x1103050E:find_system_partition_reprobe}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0799-GMT]{3>7} CHECKPOINT END: PATCHD:[0x050E] find_system_partition_reprobe
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0800-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x050F] find_apfs_container_device
+ota-step-ids = {0x11031400:12;0x1103050F:30}
+ota-step-names = {0x11031400:ff_start;0x1103050F:find_apfs_container_device}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+patchd: patchd_common_start_block_invoke(2615): probe media for APFS container successful, device is APFS formatted.
+[01:14:42.0801-GMT]{3>7} CHECKPOINT END: PATCHD:[0x050F] find_apfs_container_device
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0802-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0558] delete_stale_lwvm_key
+ota-step-ids = {0x11031400:12;0x11030558:31}
+ota-step-names = {0x11031400:ff_start;0x11030558:delete_stale_lwvm_key}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0803-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0558] delete_stale_lwvm_key
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0804-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0511] clear_remap_mode
+ota-step-ids = {0x11031400:12;0x11030511:32}
+ota-step-names = {0x11031400:ff_start;0x11030511:clear_remap_mode}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+executing /usr/sbin/nvram -d enable-remap-mode
+enable-remap-mode
+patchd: patchd_common_start_block_invoke_3(2649): nvram variable 'enable-remap-mode' cleared.
+[01:14:42.0812-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0511] clear_remap_mode
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0813-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0512] find_update_partition
+ota-step-ids = {0x11031400:12;0x11030512:33}
+ota-step-names = {0x11031400:ff_start;0x11030512:find_update_partition}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0814-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0512] find_update_partition
+ota-step-ids = {0x11031400:12}
+ota-step-names = {0x11031400:ff_start}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+[01:14:42.0814-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0513] mount_update_partition
+ota-step-ids = {0x11031400:12;0x11030513:34}
+ota-step-names = {0x11031400:ff_start;0x11030513:mount_update_partition}
+ota-step-uptime = 7
+ota-step-user-progress = 2
+executing /System/Library/Filesystems/apfs.fs/mount_apfs /dev/disk0s1s5 /mnt2
+/dev/disk0s1s5 mounted on /mnt2
+patchd: patchd_common_start_block_invoke(2665): Creating dirty exit file
+ramrod-nvram-shadow-path = /mnt2/nvram.plist
+executing /usr/sbin/nvram ramrod-nvram-shadow-path=/mnt2/nvram.plist
+ramrod-nvram-session = 1552526075
+executing /usr/sbin/nvram ramrod-nvram-session=1552526075
+no NVRAM file
+executing /usr/sbin/nvram ramrod-nvram-sequence=1
+first sync - no file
+nvram successfully persisted to the filesystem
+nvram will be shadowed at the path /mnt2/nvram.plist
+patchd: patchd_common_start_block_invoke(2682): freeSpace before deleting reserve fileXXXX>>>>>>8
+patchd: patchd_common_start_block_invoke(2694): No reserve file found
+patchd: patchd_common_start_block_invoke(2702): freeSpace after deleting reserve fileXXXX>>>>>>8
+patchd: patchd_log_open_log_stream(86): Attempting to creating live patchd log /mnt2/patchdXXXX>>>>>75.log
+patchd: patchd_log_open_log_stream(89): Live patchd log successfully created
+patchd: patchd_log_open_log_stream(92): Live patchd log successfully started
+[01:14:42.0865-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0513] mount_update_partition
+ota-step-ids = {0x11031400:12}
+executing /usr/sbin/nvram ramrod-nvram-sequence=2
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start}
+executing /usr/sbin/nvram ramrod-nvram-sequence=3
+nvram successfully persisted to the filesystem
+ota-step-uptime = 7
+executing /usr/sbin/nvram ramrod-nvram-sequence=4
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=5
+nvram successfully persisted to the filesystem
+[01:14:42.0898-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0514] find_system_partition
+ota-step-ids = {0x11031400:12;0x11030514:35}
+executing /usr/sbin/nvram ramrod-nvram-sequence=6
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start;0x11030514:find_system_partition}
+executing /usr/sbin/nvram ramrod-nvram-sequence=7
+nvram successfully persisted to the filesystem
+ota-step-uptime = 7
+executing /usr/sbin/nvram ramrod-nvram-sequence=8
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=9
+nvram successfully persisted to the filesystem
+[01:14:42.0930-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0514] find_system_partition
+ota-step-ids = {0x11031400:12}
+executing /usr/sbin/nvram ramrod-nvram-sequence=10
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start}
+executing /usr/sbin/nvram ramrod-nvram-sequence=11
+nvram successfully persisted to the filesystem
+ota-step-uptime = 7
+executing /usr/sbin/nvram ramrod-nvram-sequence=12
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=13
+nvram successfully persisted to the filesystem
+[01:14:42.0962-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0515] mount_system_partition
+ota-step-ids = {0x11031400:12;0x11030515:36}
+executing /usr/sbin/nvram ramrod-nvram-sequence=14
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start;0x11030515:mount_system_partition}
+executing /usr/sbin/nvram ramrod-nvram-sequence=15
+nvram successfully persisted to the filesystem
+ota-step-uptime = 7
+executing /usr/sbin/nvram ramrod-nvram-sequence=16
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=17
+nvram successfully persisted to the filesystem
+executing /System/Library/Filesystems/apfs.fs/mount_apfs /dev/disk0s1s1 /mnt1
+/dev/disk0s1s1 mounted on /mnt1
+[01:14:43.0018-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0515] mount_system_partition
+ota-step-ids = {0x11031400:12}
+executing /usr/sbin/nvram ramrod-nvram-sequence=18
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start}
+executing /usr/sbin/nvram ramrod-nvram-sequence=19
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=20
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=21
+nvram successfully persisted to the filesystem
+[01:14:43.0049-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0568] patchd_boot_macefi
+ota-step-ids = {0x11031400:12;0x11030568:37}
+executing /usr/sbin/nvram ramrod-nvram-sequence=22
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start;0x11030568:patchd_boot_macefi}
+executing /usr/sbin/nvram ramrod-nvram-sequence=23
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=24
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=25
+nvram successfully persisted to the filesystem
+Read (0x4) for key EFBM
+entering ramrod_nudge_SMC_progress
+Nudging SMC progress percentage by 6
+Read (0x7) for key EFBP
+Read (0x1) for key AUPO
+executing /usr/bin/MacEFIUtil -i /mnt1//usr/standalone/firmware/MacEFI/MacEFI.img4
+Successfully booted MacEFI
+[01:14:43.0486-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0568] patchd_boot_macefi
+ota-step-ids = {0x11031400:12}
+executing /usr/sbin/nvram ramrod-nvram-sequence=26
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start}
+executing /usr/sbin/nvram ramrod-nvram-sequence=27
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=28
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=29
+nvram successfully persisted to the filesystem
+[01:14:43.0518-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x051F] load_update_plist
+ota-step-ids = {0x11031400:12;0x1103051F:38}
+executing /usr/sbin/nvram ramrod-nvram-sequence=30
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start;0x1103051F:load_update_plist}
+executing /usr/sbin/nvram ramrod-nvram-sequence=31
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=32
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=33
+nvram successfully persisted to the filesystem
+patchd: load_update_plist(1386): Update options: <CFBasicHash 0x15fe06cd0 [0x105ba7dd0]>{type = mutable dict, count = 11,
+entries =>
+	2 : llb-data = <CFData 0x15fe0a280 [0x105ba7dd0]>{length = 1069806, capacity = 1069806, bytes = 0x<<<<<<<<ICCID>>>>>>>343083103e24 ... <<<<<MEID>>>>>c1}
+	3 : ap-nonce = <CFData 0x15fe03ed0 [0x105ba7dd0]>{length = 8, capacity = 8, bytes = 0x<<<<<MEID>>>>>53}
+	4 : <CFString 0x15fe09bd0 [0x105ba7dd0]>{contents = "prepared-on-update"} = <CFBoolean 0x105baddb0 [0x105ba7dd0]>{value = true}
+	5 : <CFString 0x15fe09c30 [0x105ba7dd0]>{contents = "update-asset-attributes"} = <CFBasicHash 0x15fe09c90 [0x105ba7dd0]>{type = mutable dict, count = 4,
+entries =>
+	4 : Build = 16P3133
+	5 : <CFString 0x15fe09a10 [0x105ba7dd0]>{contents = "_EventRecordingServiceURL"} = <CFString 0x15fe09a70 [0x105ba7dd0]>{contents = "https://xp.apple.com/report"}
+	7 : <CFString 0x15fe09950 [0x105ba7dd0]>{contents = "UpdateUUID"} = <CFString 0x15fe09990 [0x105ba7dd0]>{contents = "B0317058-CAEE-41C5-BF72XXXX>>>>>F328"}
+	11 : <CFString 0x15fe09ad0 [0x105ba7dd0]>{contents = "__msu_brain-location_key"} = <CFString 0x15fe09b30 [0x105ba7dd0]>{contents = "/var/MobileSoftwareUpdate/Controller/UpdateBrain"}
+}
+
+	6 : <CFString 0x15fe03bc0 [0x105ba7dd0]>{contents = "TargetUpdate"} = 16P3133
+	7 : <CFString 0x15fe0a2b0 [0x105ba7dd0]>{contents = "preflight-personalize"} = <CFBoolean 0x105baddb0 [0x105ba7dd0]>{value = true}
+	8 : <CFString 0x15fe04cd0 [0x105ba7dd0]>{contents = "apply-options"} = <CFBasicHash 0x15fe06ac0 [0x105ba7dd0]>{type = mutable dict, count = 8,
+entries =>
+	0 : <CFString 0x15fe060e0 [0x105ba7dd0]>{contents = "CurrentLanguageCode"} = en
+	1 : <CFString 0x15fe09330 [0x105ba7dd0]>{contents = "RecordPreflightEvents"} = <CFBoolean 0x105baddb0 [0x105ba7dd0]>{value = true}
+	2 : <CFString 0x15fe09390 [0x105ba7dd0]>{contents = "SocksProxySettings"} = <CFBasicHash 0x15fe09410 [0x105ba7dd0]>{type = mutable dict, count = 2,
+entries =>
+	7 : <CFString 0x15fe09530 [0x105ba7dd0]>{contents = "SOCKSProxy"} = <CFString 0x15fe09570 [0x105ba7dd0]>{contents = "fe80::aede:48ff:fe00:1122%en1"}
+	8 : SOCKSPort = <CFNumber 0x<<<<<MEID>>>>>d3 [0x105ba7dd0]>{value = +52589, type = kCFNumberSInt64Type}
+}
+
+	3 : <CFString 0x15fe09790 [0x105ba7dd0]>{contents = "__msu-update-attributes-dictionary-key"} = <CFBasicHash 0x15fe09830 [0x105ba7dd0]>{type = mutable dict, count = 4,
+entries =>
+	4 : Build = 16P3133
+	5 : <CFString 0x15fe09a10 [0x105ba7dd0]>{contents = "_EventRecordingServiceURL"} = <CFString 0x15fe09a70 [0x105ba7dd0]>{contents = "https://xp.apple.com/report"}
+	7 : <CFString 0x15fe09950 [0x105ba7dd0]>{contents = "UpdateUUID"} = <CFString 0x15fe09990 [0x105ba7dd0]>{contents = "B0317058-CAEE-41C5-BF72XXXX>>>>>F328"}
+	11 : <CFString 0x15fe09ad0 [0x105ba7dd0]>{contents = "__msu_brain-location_key"} = <CFString 0x15fe09b30 [0x105ba7dd0]>{contents = "/var/MobileSoftwareUpdate/Controller/UpdateBrain"}
+}
+
+	9 : <CFString 0x15fe01320 [0x105ba7dd0]>{contents = "EventStats"} = <CFBasicHash 0x15fe08eb0 [0x105ba7dd0]>{type = mutable dict, count = 1,
+entries =>
+	6 : <CFString 0x15fe06b20 [0x105ba7dd0]>{contents = "missingURL"} = true
+}
+
+	10 : <CFString 0x15fe095d0 [0x105ba7dd0]>{contents = "SourcePath"} = <CFString 0x15fe08e40 [0x105ba7dd0]>{contents = "/var/MobileSoftwareUpdate/Controller/UpdateBundle"}
+	11 : <CFString 0x15fe09730 [0x105ba7dd0]>{contents = "UsePreflightUpdate"} = <CFBoolean 0x105baddb0 [0x105ba7dd0]>{value = true}
+	12 : <CFString 0x15fe017d0 [0x105ba7dd0]>{contents = "GenericUpdaterInfoOverrides"} = <CFBasicHash 0x15fe09210 [0x105ba7dd0]>{type = mutable dict, count = 1,
+entries =>
+	9 : <CFString 0x15fe09000 [0x105ba7dd0]>{contents = "IcefallSEUpdaterInfoOverride"} = <CFData 0x15fe091e0 [0x105ba7dd0]>{length = 195, capacity = 195, bytes = 0x<<<<<<<<ICCID>>>>>>>810202248202 ... <<<<<MEID>>>>>e4}
+}
+
+}
+
+	9 : <CFString 0x15fe09060 [0x105ba7dd0]>{contents = "bundle-on-update"} = <CFBoolean 0x105baddb0 [0x105ba7dd0]>{value = true}
+	10 : <CFString 0x15fe0a310 [0x105ba7dd0]>{contents = "prepare-snapshot"} = <CFBoolean 0x105baddb0 [0x105ba7dd0]>{value = true}
+	11 : <CFString 0x15fe090c0 [0x105ba7dd0]>{contents = "ignore-list"} = (
+    "/.HFS+ Private Directory Data
+",
+    "/private/var/",
+    "/private/xarts/",
+    "/restore.log",
+    "/System/Library/Caches/com.apple.kernelcaches/kernelcache",
+    "/private/etc/fstab",
+    "/usr/local/standalone/firmware/Baseband/",
+    "/usr/standalone/firmware/",
+    "/System/Library/Caches/apticket.der",
+    "/System/Library/Pearl/ReferenceFrames/",
+    "/.DarwinDepot/",
+    "/System/Library/Caches/com.apple.factorydata/"
+)
+	12 : <CFString 0x15fe09cd0 [0x105ba7dd0]>{contents = "update-path"} = <CFString 0x15fe09fc0 [0x105ba7dd0]>{contents = "/private/var/MobileSoftwareUpdate/softwareupdate.86/"}
+}
+patchd: OTA bundle was prepared with a permanent Update volume
+patchd: OTA bundle is stored on a permanent Update volume.
+patchd: load_update_plist(1414): Checking for /var link...patchd: OTA update was prepared to a snapshot
+patchd: load_update_plist(1543): scratch_path=/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/
+patchd: load_update_plist(1544): package_path=/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/
+patchd: load_update_plist(1545): rootA_path=/mnt1/
+patchd: load_update_plist(1546): rootB_path=/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/root/
+patchd: load_update_plist(1547): payload_path=/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/payloadv2/
+patchd: load_update_plist(1548): boot_path=/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/
+patchd: patchd_common_start_block_invoke(2747): Update plist loaded (context initialized).
+[01:14:43.0579-GMT]{3>7} CHECKPOINT END: PATCHD:[0x051F] load_update_plist
+ota-step-ids = {0x11031400:12}
+executing /usr/sbin/nvram ramrod-nvram-sequence=34
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start}
+executing /usr/sbin/nvram ramrod-nvram-sequence=35
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=36
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=37
+nvram successfully persisted to the filesystem
+[01:14:43.0612-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0582] verify_precondition
+ota-step-ids = {0x11031400:12;0x11030582:39}
+executing /usr/sbin/nvram ramrod-nvram-sequence=38
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start;0x11030582:verify_precondition}
+executing /usr/sbin/nvram ramrod-nvram-sequence=39
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=40
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=41
+nvram successfully persisted to the filesystem
+patchd: patchd_common_start_block_invoke(2773): Recording trace point 2
+ota-breadcrumbs = 2:pB
+executing /usr/sbin/nvram ota-breadcrumbs=2:pB
+executing /usr/sbin/nvram ramrod-nvram-sequence=42
+nvram successfully persisted to the filesystem
+patchd: APFS Container /dev/disk0s1
+patchd: unexpected partition 'xART' - skipping
+patchd: unexpected partition 'FC901B02-42E0-4004-9014XXXX>>>>>B11D' - skipping
+patchd: patchd_common_start_block_invoke(2787): Reverting system volume to prepared snapshot.
+patchd: APFS Container /dev/disk0s1
+patchd: unexpected partition 'xART' - skipping
+patchd: unexpected partition 'FC901B02-42E0-4004-9014XXXX>>>>>B11D' - skipping
+patchd: unmounting /dev/disk0s1s1 at /mnt1
+patchd: file system at /mnt1 successfully unmounted
+patchd: reverting system volume to snapshot com.apple.os.update-MSUPrepareUpdate succeeded. remounting...
+patchd: file system at /mnt1 successfully unmounted
+patchd: mounting system volume read/write at /mnt1 succeeded.
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source' -> '/mnt2/private/var/MobileSoftwareUpdate/Controller/UpdateBundle'
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/root' -> '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/payload/replace/'
+patchd: patchd_common_fixup_links(1679): Fixing up symbolic links under '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/' for root '/mnt2'
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/Restore.plist' -> '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Restore.plist'
+patchd: patchd_fixup_link(1662): access(/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Restore.plist) -> No such file or directory
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/Firmware/device_map.plist' -> '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Firmware/device_map.plist'
+patchd: patchd_fixup_link(1662): access(/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Firmware/device_map.plist) -> No such file or directory
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/Firmware/all_flash/manifest' -> '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Firmware/all_flash/manifest'
+patchd: patchd_fixup_link(1662): access(/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Firmware/all_flash/manifest) -> No such file or directory
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/Firmware/SE' -> '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Firmware/SE'
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/Firmware/device_map.txt' -> '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Firmware/device_map.txt'
+patchd: patchd_fixup_link(1662): access(/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/Firmware/device_map.txt) -> No such file or directory
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/OS_048-49038-036.dmg' -> '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/048-49038-036.dmg'
+patchd: patchd_fixup_link(1662): access(/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/048-49038-036.dmg) -> No such file or directory
+patchd: patchd_fixup_link(1659): fixing up '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/BuildManifest.plist' -> '/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/source/boot/BuildManifest.plist'
+[01:14:43.0903-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0582] verify_precondition
+ota-step-ids = {0x11031400:12}
+executing /usr/sbin/nvram ramrod-nvram-sequence=43
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031400:ff_start}
+executing /usr/sbin/nvram ramrod-nvram-sequence=44
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=45
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=46
+nvram successfully persisted to the filesystem
+[01:14:43.0945-GMT]{3>7} CHECKPOINT END: PATCHD:[0x1400] ff_start
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=47
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=48
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=49
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=50
+nvram successfully persisted to the filesystem
+[01:14:43.0984-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x1401] ff_predanger_zone
+ota-step-ids = {0x11031401:40}
+executing /usr/sbin/nvram ramrod-nvram-sequence=51
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=52
+nvram successfully persisted to the filesystem
+ota-step-uptime = 8
+executing /usr/sbin/nvram ramrod-nvram-sequence=53
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=54
+nvram successfully persisted to the filesystem
+[01:14:44.0016-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x052B] ff_ticket_update
+ota-step-ids = {0x11031401:40;0x1103052B:41}
+executing /usr/sbin/nvram ramrod-nvram-sequence=55
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x1103052B:ff_ticket_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=56
+nvram successfully persisted to the filesystem
+ota-step-uptime = 9
+executing /usr/sbin/nvram ramrod-nvram-sequence=57
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=58
+nvram successfully persisted to the filesystem
+entering ramrod_ticket_update_verify
+patchd: ap ticket request being processed
+patchd: Loaded ticket from file:///mnt2/apticket.der
+looking up boot manifest hash
+device tree ticket_hashXXXX>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>C1E6A970
+crypto-hash-method found. Using SHA2-384
+computed ticket_hash   XXXX>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>C1E6A970
+received valid ticket (5302 bytes)
+[01:14:44.0052-GMT]{3>7} CHECKPOINT END: PATCHD:[0x052B] ff_ticket_update
+ota-step-ids = {0x11031401:40}
+executing /usr/sbin/nvram ramrod-nvram-sequence=59
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=60
+nvram successfully persisted to the filesystem
+ota-step-uptime = 9
+executing /usr/sbin/nvram ramrod-nvram-sequence=61
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=62
+nvram successfully persisted to the filesystem
+[01:14:44.0084-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0517] ff_boot_sep
+ota-step-ids = {0x11031401:40;0x11030517:42}
+executing /usr/sbin/nvram ramrod-nvram-sequence=63
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11030517:ff_boot_sep}
+executing /usr/sbin/nvram ramrod-nvram-sequence=64
+nvram successfully persisted to the filesystem
+ota-step-uptime = 9
+executing /usr/sbin/nvram ramrod-nvram-sequence=65
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=66
+nvram successfully persisted to the filesystem
+patchd: patchd_common_boot_sep(2941): patchd_common_boot_sep
+executing /usr/libexec/seputil --preflight --restore+art /mnt2/sep-firmware
+seputil: platform does not support ART, no preflight
+TEMPORARY: forcing should_have_xart_partition to true on bridge.We should have an xART partition.
+[01:14:44.0139-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0517] ff_boot_sep
+ota-step-ids = {0x11031401:40}
+executing /usr/sbin/nvram ramrod-nvram-sequence=67
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=68
+nvram successfully persisted to the filesystem
+ota-step-uptime = 9
+executing /usr/sbin/nvram ramrod-nvram-sequence=69
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=70
+nvram successfully persisted to the filesystem
+[01:14:44.0172-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0566] ff_verify_prepared_snapshot
+ota-step-ids = {0x11031401:40;0x11030566:43}
+executing /usr/sbin/nvram ramrod-nvram-sequence=71
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11030566:ff_verify_prepared_snapshot}
+executing /usr/sbin/nvram ramrod-nvram-sequence=72
+nvram successfully persisted to the filesystem
+ota-step-uptime = 9
+executing /usr/sbin/nvram ramrod-nvram-sequence=73
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=74
+nvram successfully persisted to the filesystem
+entering ramrod_ticket_copy_hash_string
+crypto-hash-method found. Using SHA2-384
+executing /sbin/mount_apfs -R -s com.apple.os.updateXXXX>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>C1E6A970 /dev/disk0s1s1 /mnt1
+mount_apfs: snapshot implicitly mounted readonly
+patchd: verify_prepared_snapshot(72): System volume snapshot com.apple.os.updateXXXX>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>C1E6A970 was successfully mounted at /mnt1
+patchd: Verifying with the post.bom
+patchd: VERIFY_START
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './.HFS+ Private Directory Data
+' is missing
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'./.HFS+ Private Directory Data
+' is missing" UserInfo={MSUFullReplacementRecommened=true, NSLocalizedDescription='./.HFS+ Private Directory Data
+' is missing}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - '<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/FSCl-F6G839106AMGT6KAAA' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/HmCMXXXX>>>>>20LJ3Y32E' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/NvMR-F6G839106AMGT6KAAA' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/ccrtXXXX>>>>>-<<<<<MEID>>>>>26' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/hop0-F6G839106AMGT6KAAA' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/pcrtXXXX>>>>>-<<<<<MEID>>>>>26' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/scrtXXXX>>>>>-<<<<<MEID>>>>>26' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/sealXXXX>>>>>-<<<<<MEID>>>>>26' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.factorydata/trustobject-current' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './System/Library/Caches/com.apple.kernelcaches/kernelcache' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './private/xarts/' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/FUD/' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/FUD/AOP.img4' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/FUD/InputDevice.img4' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/FUD/RestoreTrustCache.img4' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/FUD/StaticTrustCache.img4' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/MacEFI/' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/MacEFI/MacEFI.img4' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/devicetree.img4' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './usr/standalone/firmware/sep-firmware.img4' has been added
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'<<File name>>' has been added >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateBOMErrorDomain error 1 - contents of '/mnt1/private/etc/fstab' don't match bom (e66c6e20 vs 3ac60464)
+patchd: opened /mnt1/private/etc/fstab with F_NOCACHE
+patchd: closed F_NOCACHE file. cache hits=1 (0 bytes) cache misses=1 (273 bytes)
+patchd: '<<File name>>' is on the exception list>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './private/var/db/timezone/localtime' is missing
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'./private/var/db/timezone/localtime' is missing" UserInfo={MSUFullReplacementRecommened=true, NSLocalizedDescription='./private/var/db/timezone/localtime' is missing}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './private/var/db/timezone/zoneinfo' is missing
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'./private/var/db/timezone/zoneinfo' is missing" UserInfo={MSUFullReplacementRecommened=true, NSLocalizedDescription='./private/var/db/timezone/zoneinfo' is missing}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './private/var/mobile/.forward' is missing
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'./private/var/mobile/.forward' is missing" UserInfo={MSUFullReplacementRecommened=true, NSLocalizedDescription='./private/var/mobile/.forward' is missing}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './private/var/mobile/Library/.localized' is missing
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'./private/var/mobile/Library/.localized' is missing" UserInfo={MSUFullReplacementRecommened=true, NSLocalizedDescription='./private/var/mobile/Library/.localized' is missing}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './private/var/msgs/bounds' is missing
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'./private/var/msgs/bounds' is missing" UserInfo={MSUFullReplacementRecommened=true, NSLocalizedDescription='./private/var/msgs/bounds' is missing}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>
+patchd: MobileSoftwareUpdateErrorDomain error 3 - './private/var/preferences/Audio/BridgeAudioConfig.plist' is missing
+patchd: Error Domain=MobileSoftwareUpdateErrorDomain Code=3 "'./private/var/preferences/Audio/BridgeAudioConfig.plist' is missing" UserInfo={MSUFullReplacementRecommened=true, NSLocalizedDescription='./private/var/preferences/Audio/BridgeAudioConfig.plist' is missing}
+patchd: '<<File name>>' is on the exception list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+patchd: verify_prepared_snapshot(108): System volume snapshot com.apple.os.updateXXXX>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>C1E6A970 was successfully unmounted from /mnt1
+[01:14:45.0924-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0566] ff_verify_prepared_snapshot
+ota-step-ids = {0x11031401:40}
+executing /usr/sbin/nvram ramrod-nvram-sequence=75
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=76
+nvram successfully persisted to the filesystem
+ota-step-uptime = 10
+executing /usr/sbin/nvram ramrod-nvram-sequence=77
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=78
+nvram successfully persisted to the filesystem
+[01:14:45.0958-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0567] ff_verify_prepared_iboot
+ota-step-ids = {0x11031401:40;0x11030567:44}
+executing /usr/sbin/nvram ramrod-nvram-sequence=79
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11030567:ff_verify_prepared_iboot}
+executing /usr/sbin/nvram ramrod-nvram-sequence=80
+nvram successfully persisted to the filesystem
+ota-step-uptime = 10
+executing /usr/sbin/nvram ramrod-nvram-sequence=81
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=82
+nvram successfully persisted to the filesystem
+ramrod_device_supports_dual_iboot: dual iboot supported
+patchd: verify_prepared_iboot(134): Device supports dual iBoot.
+iBoot0: 0x00000000:0x00140000
+iBoot1: 0x00140000:0x00140000
+header0: 0x00280000:0x00001000
+header1: 0x00281000:0x00001000
+ramrod_SPI_read: inputs[0] = 0x280000; inputs[1] = 0x8; buf = 0x16b2d2388; outSize = 0x8; &outSize = 0x16b2d2320
+ramrod_SPI_read: inputs[0] = 0x281000; inputs[1] = 0x8; buf = 0x16b2d2380; outSize = 0x8; &outSize = 0x16b2d2320
+ramrod_find_prepared_dual_iboot_spi_partition: iBoot partition 1 is prepared (gen count = 2)
+iBoot0: 0x00000000:0x00140000
+iBoot1: 0x00140000:0x00140000
+header0: 0x00280000:0x00001000
+header1: 0x00281000:0x00001000
+ramrod_SPI_read: inputs[0] = 0x281000; inputs[1] = 0x8; buf = 0x16b2d2368; outSize = 0x8; &outSize = 0x16b2d2300
+ramrod_SPI_read: inputs[0] = 0x280000; inputs[1] = 0x8; buf = 0x16b2d2360; outSize = 0x8; &outSize = 0x16b2d2300
+ramrod_SPI_read: inputs[0] = 0x140000; inputs[1] = 0x105313; buf = 0x1091ec000; outSize = 0x105313; &outSize = 0x16b2d2300
+patchd: verify_prepared_iboot(179): iBoot verified.
+[01:14:46.0627-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0567] ff_verify_prepared_iboot
+ota-step-ids = {0x11031401:40}
+executing /usr/sbin/nvram ramrod-nvram-sequence=83
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=84
+nvram successfully persisted to the filesystem
+ota-step-uptime = 11
+executing /usr/sbin/nvram ramrod-nvram-sequence=85
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=86
+nvram successfully persisted to the filesystem
+[01:14:46.0659-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x056B] ff_verify_personalized_files
+ota-step-ids = {0x11031401:40;0x1103056B:45}
+executing /usr/sbin/nvram ramrod-nvram-sequence=87
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x1103056B:ff_verify_personalized_files}
+executing /usr/sbin/nvram ramrod-nvram-sequence=88
+nvram successfully persisted to the filesystem
+ota-step-uptime = 11
+executing /usr/sbin/nvram ramrod-nvram-sequence=89
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=90
+nvram successfully persisted to the filesystem
+patchd: Verifying personalized files.
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fd10210 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: (patchd) Checking validity of APTicket at path: /mnt1/System/Library/Caches/apticket.der
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fe06c60 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: Staged APNonce from ticket is <CFData 0x15fe0b090 [0x105ba7dd0]>{length = 32, capacity = 32, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>17}. Regenerated APNonce is <CFData 0x15fe06c60 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyBuildIdentityForVariant: variant not specified, will use first variant found for this device in build manifest
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyBuildIdentityForVariant: No baseband chipid reported. Will match Build Identity based on ap chipid and boardid only.
+patchd: Examining firmware MacEFI at path /mnt1/usr/standalone/firmware/MacEFI/MacEFI.img4 during personalization verification.
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fe0ad80 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: Examining firmware AOP at path /mnt1/usr/standalone/firmware/FUD/AOP.img4 during personalization verification.
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fe0adf0 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: Examining firmware SEP at path /mnt1/usr/standalone/firmware/sep-firmware.img4 during personalization verification.
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fe0ae60 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: Examining firmware KernelCache at path /mnt1/System/Library/Caches/com.apple.kernelcaches/kernelcache during personalization verification.
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fe0ac80 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: Examining firmware DeviceTree at path /mnt1/usr/standalone/firmware/devicetree.img4 during personalization verification.
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fe0b170 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fd10050 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+[01:14:46.0911-GMT]{3>7} CHECKPOINT END: PATCHD:[0x056B] ff_verify_personalized_files
+ota-step-ids = {0x11031401:40}
+executing /usr/sbin/nvram ramrod-nvram-sequence=91
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=92
+nvram successfully persisted to the filesystem
+ota-step-uptime = 11
+executing /usr/sbin/nvram ramrod-nvram-sequence=93
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=94
+nvram successfully persisted to the filesystem
+[01:14:46.0943-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x1404] ff_data_dependent_operations
+ota-step-ids = {0x11031401:40;0x11031404:46}
+executing /usr/sbin/nvram ramrod-nvram-sequence=95
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=96
+nvram successfully persisted to the filesystem
+ota-step-uptime = 11
+executing /usr/sbin/nvram ramrod-nvram-sequence=97
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=98
+nvram successfully persisted to the filesystem
+[01:14:46.0975-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x051A] ff_find_data_partition
+ota-step-ids = {0x11031401:40;0x11031404:46;0x1103051A:47}
+executing /usr/sbin/nvram ramrod-nvram-sequence=99
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x1103051A:ff_find_data_partition}
+executing /usr/sbin/nvram ramrod-nvram-sequence=100
+nvram successfully persisted to the filesystem
+ota-step-uptime = 11
+executing /usr/sbin/nvram ramrod-nvram-sequence=101
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=102
+nvram successfully persisted to the filesystem
+patchd: data_dependent_operations_block_invoke(295): Skipping checkpoint on condition (patchd_source_on_UpdateVolume)
+[01:14:47.0008-GMT]{3>7} CHECKPOINT END: PATCHD:[0x051A] ff_find_data_partition
+ota-step-ids = {0x11031401:40;0x11031404:46}
+executing /usr/sbin/nvram ramrod-nvram-sequence=103
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=104
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=105
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=106
+nvram successfully persisted to the filesystem
+[01:14:47.0040-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x051C] ff_mount_all_filesystems
+ota-step-ids = {0x11031401:40;0x11031404:46;0x1103051C:48}
+executing /usr/sbin/nvram ramrod-nvram-sequence=107
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x1103051C:ff_mount_all_filesystems}
+executing /usr/sbin/nvram ramrod-nvram-sequence=108
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=109
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=110
+nvram successfully persisted to the filesystem
+patchd: data_dependent_operations_block_invoke(300): Skipping checkpoint on condition (patchd_source_on_UpdateVolume)
+[01:14:47.0073-GMT]{3>7} CHECKPOINT END: PATCHD:[0x051C] ff_mount_all_filesystems
+ota-step-ids = {0x11031401:40;0x11031404:46}
+executing /usr/sbin/nvram ramrod-nvram-sequence=111
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=112
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=113
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=114
+nvram successfully persisted to the filesystem
+[01:14:47.0105-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0520] ff_process_apply_options
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11030520:49}
+executing /usr/sbin/nvram ramrod-nvram-sequence=115
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11030520:ff_process_apply_options}
+executing /usr/sbin/nvram ramrod-nvram-sequence=116
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=117
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=118
+nvram successfully persisted to the filesystem
+[01:14:47.0137-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0520] ff_process_apply_options
+ota-step-ids = {0x11031401:40;0x11031404:46}
+executing /usr/sbin/nvram ramrod-nvram-sequence=119
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=120
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=121
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=122
+nvram successfully persisted to the filesystem
+[01:14:47.0169-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0522] ff_fixup_symlinks
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11030522:50}
+executing /usr/sbin/nvram ramrod-nvram-sequence=123
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11030522:ff_fixup_symlinks}
+executing /usr/sbin/nvram ramrod-nvram-sequence=124
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=125
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=126
+nvram successfully persisted to the filesystem
+patchd: data_dependent_operations_block_invoke_2(309): Skipping checkpoint on condition (patchd_using_UpdateVolume)
+[01:14:47.0201-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0522] ff_fixup_symlinks
+ota-step-ids = {0x11031401:40;0x11031404:46}
+executing /usr/sbin/nvram ramrod-nvram-sequence=127
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=128
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=129
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=130
+nvram successfully persisted to the filesystem
+[01:14:47.0234-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x1405] ff_bundle_dependent_operations
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11031405:51}
+executing /usr/sbin/nvram ramrod-nvram-sequence=131
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11031405:ff_bundle_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=132
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=133
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=134
+nvram successfully persisted to the filesystem
+patchd: data_dependent_operations_block_invoke_3(316): Performing bundle dependent operations.
+[01:14:47.0267-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0529] ff_load_info_plist
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11031405:51;0x11030529:52}
+executing /usr/sbin/nvram ramrod-nvram-sequence=135
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11031405:ff_bundle_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=136
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=137
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=138
+nvram successfully persisted to the filesystem
+patchd: bundle_dependent_operations_block_invoke(246): Recording trace point 37
+ota-breadcrumbs = 2:pBk
+executing /usr/sbin/nvram ota-breadcrumbs=2:pBk
+executing /usr/sbin/nvram ramrod-nvram-sequence=139
+nvram successfully persisted to the filesystem
+[01:14:47.0315-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0529] ff_load_info_plist
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11031405:51}
+executing /usr/sbin/nvram ramrod-nvram-sequence=140
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11031405:ff_bundle_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=141
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=142
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=143
+nvram successfully persisted to the filesystem
+[01:14:47.0347-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0524] ff_copy_from_personalized
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11031405:51;0x11030524:53}
+executing /usr/sbin/nvram ramrod-nvram-sequence=144
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11031405:ff_bundle_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=145
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=146
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=147
+nvram successfully persisted to the filesystem
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fe0ba30 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+[01:14:47.0384-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0524] ff_copy_from_personalized
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11031405:51}
+executing /usr/sbin/nvram ramrod-nvram-sequence=148
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11031405:ff_bundle_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=149
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=150
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=151
+nvram successfully persisted to the filesystem
+[01:14:47.0416-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0525] ff_copy_identity_for_variant
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11031405:51;0x11030525:54}
+executing /usr/sbin/nvram ramrod-nvram-sequence=152
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11031405:ff_bundle_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=153
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=154
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=155
+nvram successfully persisted to the filesystem
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fe0ba50 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyBuildIdentityForVariant: variant not specified, will use first variant found for this device in build manifest
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyBuildIdentityForVariant: No baseband chipid reported. Will match Build Identity based on ap chipid and boardid only.
+patchd: patchd_common_copy_identity_for_variant(3221): kernelcache_path=/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/KernelCache_kernelcache.release.img4
+patchd: patchd_common_copy_identity_for_variant(3222): devicetree_path=/mnt2/private/var/MobileSoftwareUpdate/softwareupdate.86/target/boot/Firmware/all_flash/DeviceTree_DeviceTree.j680ap.img4
+patchd: patchd_common_copy_identity_for_variant(3223): 11 seconds elapsed so far
+[01:14:47.0456-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0525] ff_copy_identity_for_variant
+ota-step-ids = {0x11031401:40;0x11031404:46;0x11031405:51}
+executing /usr/sbin/nvram ramrod-nvram-sequence=156
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations;0x11031405:ff_bundle_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=157
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=158
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=159
+nvram successfully persisted to the filesystem
+[01:14:47.0488-GMT]{3>7} CHECKPOINT END: PATCHD:[0x1405] ff_bundle_dependent_operations
+ota-step-ids = {0x11031401:40;0x11031404:46}
+executing /usr/sbin/nvram ramrod-nvram-sequence=160
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone;0x11031404:ff_data_dependent_operations}
+executing /usr/sbin/nvram ramrod-nvram-sequence=161
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=162
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=163
+nvram successfully persisted to the filesystem
+[01:14:47.0521-GMT]{3>7} CHECKPOINT END: PATCHD:[0x1404] ff_data_dependent_operations
+ota-step-ids = {0x11031401:40}
+executing /usr/sbin/nvram ramrod-nvram-sequence=164
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031401:ff_predanger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=165
+nvram successfully persisted to the filesystem
+ota-step-uptime = 12
+executing /usr/sbin/nvram ramrod-nvram-sequence=166
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=167
+nvram successfully persisted to the filesystem
+patchd: patch_failforward_block_invoke(634): Attempting to wait for MacEFI to boot as the last thing before exiting the pre-danger zone.
+Read (0x0) for key EFBS
+Waiting for MacEFI to deliver GPU PanelPower On notification...
+SystemStateChangeNotification: [subType = 11][arg1 = 1][arg2 = 0]
+SystemStateChangeNotification: [subType = 11][arg1 = 2][arg2 = 0]
+SystemStateChangeNotification: [subType = 11][arg1 = 3][arg2 = 0]
+SystemStateChangeNotification: [subType = 11][arg1 = 3][arg2 = 0]
+SystemStateChangeNotification: [subType = 11][arg1 = 3][arg2 = 0]
+SystemStateChangeNotification: [subType = 11][arg1 = 19][arg2 = 0]
+received GPU PanelPower On notification - state:19
+[01:14:51.0962-GMT]{3>7} CHECKPOINT END: PATCHD:[0x1401] ff_predanger_zone
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=168
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=169
+nvram successfully persisted to the filesystem
+ota-step-uptime = 16
+executing /usr/sbin/nvram ramrod-nvram-sequence=170
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=171
+nvram successfully persisted to the filesystem
+[01:14:52.0050-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x1402] ff_danger_zone
+ota-step-ids = {0x11031402:55}
+executing /usr/sbin/nvram ramrod-nvram-sequence=172
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031402:ff_danger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=173
+nvram successfully persisted to the filesystem
+ota-step-uptime = 17
+executing /usr/sbin/nvram ramrod-nvram-sequence=174
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=175
+nvram successfully persisted to the filesystem
+[01:14:52.0097-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x056A] ff_commit_sep
+ota-step-ids = {0x11031402:55;0x1103056A:56}
+executing /usr/sbin/nvram ramrod-nvram-sequence=176
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031402:ff_danger_zone;0x1103056A:ff_commit_sep}
+executing /usr/sbin/nvram ramrod-nvram-sequence=177
+nvram successfully persisted to the filesystem
+ota-step-uptime = 17
+executing /usr/sbin/nvram ramrod-nvram-sequence=178
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=179
+nvram successfully persisted to the filesystem
+entering ramrod_wait_for_sep_load
+executing /usr/libexec/seputil --ping
+SEP OS is booted
+patchd: patchd_common_commit_sep_hash(3014): patchd_common_commit_sep_hash
+TEMPORARY: forcing should_have_xart_partition to true on bridge.We should have an xART partition.
+executing /sbin/mount_apfs -R /dev/disk0s1s3 /mnt7
+entering _ramrod_commit_sep_call_verify
+Device does not have Lynx, continuing..
+entering _ramrod_commit_sep_call_commit
+executing /usr/libexec/seputil --commit-hash
+com.apple.System.tz0-size = 0x1000000
+executing /usr/sbin/nvram com.apple.System.tz0-size=0x1000000
+executing /usr/sbin/nvram ramrod-nvram-sequence=180
+nvram successfully persisted to the filesystem
+patchd: patchd_common_point_of_no_return(2920): Recording trace point 41
+ota-breadcrumbs = 2:pBko
+executing /usr/sbin/nvram ota-breadcrumbs=2:pBko
+executing /usr/sbin/nvram ramrod-nvram-sequence=181
+nvram successfully persisted to the filesystem
+[01:14:52.0591-GMT]{3>7} CHECKPOINT END: PATCHD:[0x056A] ff_commit_sep
+[01:14:52.0592-GMT]{3>7} CHECKPOINT PROGRESS: REBOOT_RETRY (initial_engine) -> (initial_engine_no_return)
+ota-reboot-retry-zone = true
+executing /usr/sbin/nvram ota-reboot-retry-zone=true
+executing /usr/sbin/nvram ramrod-nvram-sequence=182
+nvram successfully persisted to the filesystem
+ota-step-ids = {0x11031402:55}
+executing /usr/sbin/nvram ramrod-nvram-sequence=183
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031402:ff_danger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=184
+nvram successfully persisted to the filesystem
+ota-step-uptime = 17
+executing /usr/sbin/nvram ramrod-nvram-sequence=185
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=186
+nvram successfully persisted to the filesystem
+ota-outcome = initial_engine_no_return
+executing /usr/sbin/nvram ota-outcome=initial_engine_no_return
+executing /usr/sbin/nvram ramrod-nvram-sequence=187
+nvram successfully persisted to the filesystem
+upgrade-retry = true
+executing /usr/sbin/nvram upgrade-retry=true
+executing /usr/sbin/nvram ramrod-nvram-sequence=188
+nvram successfully persisted to the filesystem
+boot-command = upgrade
+executing /usr/sbin/nvram boot-command=upgrade
+executing /usr/sbin/nvram ramrod-nvram-sequence=189
+nvram successfully persisted to the filesystem
+auto-boot = true
+executing /usr/sbin/nvram -s auto-boot=true
+executing /usr/sbin/nvram ramrod-nvram-sequence=190
+nvram successfully persisted to the filesystem
+[01:14:52.0918-GMT]{3>7} CHECKPOINT NOTICE: (NVRAM set) auto-boot=true [sync=true] (point-of-no-return)
+[01:14:52.0918-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0562] ff_commit_iboot
+ota-step-ids = {0x11031402:55;0x11030562:57}
+executing /usr/sbin/nvram ramrod-nvram-sequence=191
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031402:ff_danger_zone;0x11030562:ff_commit_iboot}
+executing /usr/sbin/nvram ramrod-nvram-sequence=192
+nvram successfully persisted to the filesystem
+ota-step-uptime = 17
+executing /usr/sbin/nvram ramrod-nvram-sequence=193
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=194
+nvram successfully persisted to the filesystem
+ramrod_device_supports_dual_iboot: dual iboot supported
+iBoot0: 0x00000000:0x00140000
+iBoot1: 0x00140000:0x00140000
+header0: 0x00280000:0x00001000
+header1: 0x00281000:0x00001000
+ramrod_SPI_read: inputs[0] = 0x281000; inputs[1] = 0x8; buf = 0x16b2d24f8; outSize = 0x8; &outSize = 0x16b2d24a0
+patchd: commit_iboot(204): iBoot commit operation to partition 1 was successful.
+[01:14:53.0052-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0562] ff_commit_iboot
+ota-step-ids = {0x11031402:55}
+executing /usr/sbin/nvram ramrod-nvram-sequence=195
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031402:ff_danger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=196
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=197
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=198
+nvram successfully persisted to the filesystem
+[01:14:53.0095-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0563] ff_point_of_fail_forward
+ota-step-ids = {0x11031402:55;0x11030563:58}
+executing /usr/sbin/nvram ramrod-nvram-sequence=199
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031402:ff_danger_zone;0x11030563:ff_point_of_fail_forward}
+executing /usr/sbin/nvram ramrod-nvram-sequence=200
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=201
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=202
+nvram successfully persisted to the filesystem
+[01:14:53.0137-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0563] ff_point_of_fail_forward
+executing /usr/sbin/nvram -d upgrade-retry
+upgrade-retry
+executing /usr/sbin/nvram ramrod-nvram-sequence=203
+nvram successfully persisted to the filesystem
+executing /usr/sbin/nvram -d ota-reboot-retry-zone
+ota-reboot-retry-zone
+executing /usr/sbin/nvram ramrod-nvram-sequence=204
+nvram successfully persisted to the filesystem
+executing /usr/sbin/nvram -d boot-command
+boot-command
+executing /usr/sbin/nvram ramrod-nvram-sequence=205
+nvram successfully persisted to the filesystem
+entering ramrod_clear_ap_nonce
+[01:14:53.0379-GMT]{3>7} CHECKPOINT NOTICE: AP nonce consumed
+[01:14:53.0380-GMT]{3>7} CHECKPOINT PROGRESS: POINT_OF_FAIL_FORWARD (initial_engine_no_return) -> (initial_engine_fail_forward)
+ota-step-ids = {0x11031402:55}
+executing /usr/sbin/nvram ramrod-nvram-sequence=206
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031402:ff_danger_zone}
+executing /usr/sbin/nvram ramrod-nvram-sequence=207
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=208
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=209
+nvram successfully persisted to the filesystem
+ota-outcome = initial_engine_fail_forward
+executing /usr/sbin/nvram ota-outcome=initial_engine_fail_forward
+executing /usr/sbin/nvram ramrod-nvram-sequence=210
+nvram successfully persisted to the filesystem
+auto-boot = true
+executing /usr/sbin/nvram -s auto-boot=true
+executing /usr/sbin/nvram ramrod-nvram-sequence=211
+nvram successfully persisted to the filesystem
+[01:14:53.0649-GMT]{3>7} CHECKPOINT NOTICE: (NVRAM set) auto-boot=true [sync=true] (point-of-fail-forward)
+[01:14:53.0649-GMT]{3>7} CHECKPOINT END: PATCHD:[0x1402] ff_danger_zone
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=212
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=213
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=214
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=215
+nvram successfully persisted to the filesystem
+[01:14:53.0693-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x1403] ff_finish
+ota-step-ids = {0x11031403:59}
+executing /usr/sbin/nvram ramrod-nvram-sequence=216
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish}
+executing /usr/sbin/nvram ramrod-nvram-sequence=217
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=218
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=219
+nvram successfully persisted to the filesystem
+[01:14:53.0736-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0560] delete_system_snapshots
+ota-step-ids = {0x11031403:59;0x11030560:60}
+executing /usr/sbin/nvram ramrod-nvram-sequence=220
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030560:delete_system_snapshots}
+executing /usr/sbin/nvram ramrod-nvram-sequence=221
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=222
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=223
+nvram successfully persisted to the filesystem
+patchd: patchd_common_delete_system_snapshots(4649): freeSpace before deleting snapshotsXXXX>>>>>>0
+entering ramrod_ticket_copy_hash_string
+crypto-hash-method found. Using SHA2-384
+patchd: APFS Container /dev/disk0s1
+patchd: unexpected partition 'xART' - skipping
+patchd: unexpected partition 'FC901B02-42E0-4004-9014XXXX>>>>>B11D' - skipping
+patchd: patchd_common_delete_system_snapshots_block_invoke(4672): Successfully deleted snapshot com.apple.os.updateXXXX>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>08AE7C66
+patchd: patchd_common_delete_system_snapshots_block_invoke(4675): Skipping new system snapshot: com.apple.os.updateXXXX>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>C1E6A970
+patchd: patchd_common_delete_system_snapshots_block_invoke(4672): Successfully deleted snapshot com.apple.os.update-MSUPrepareUpdate
+patchd: patchd_common_delete_system_snapshots(4693): [patchd_common_delete_system_snapshots] waiting for snapshot deletion after deleting unused snapshots
+patchd: patchd_common_delete_system_snapshots(4698): [patchd_common_delete_system_snapshots] done with snapshot deletion
+patchd: patchd_common_delete_system_snapshots(4702): freeSpace after deleting snapshotsXXXX>>>>>>6
+[01:14:53.0813-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0560] delete_system_snapshots
+ota-step-ids = {0x11031403:59}
+executing /usr/sbin/nvram ramrod-nvram-sequence=224
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish}
+executing /usr/sbin/nvram ramrod-nvram-sequence=225
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=226
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=227
+nvram successfully persisted to the filesystem
+[01:14:53.0855-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0564] ff_firmware_update
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=228
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=229
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=230
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=231
+nvram successfully persisted to the filesystem
+patchd: patchd_common_run_firmware_update_with_options(443): starting firmware update
+patchd: image4CryptoHashMethod: sha2-384
+patchd: ApNonce (retrieved): <CFData 0x15fd12300 [0x105ba7dd0]>{length = 48, capacity = 48, bytes = 0x<<<<<<<<ICCID>>>>>>>5ff7b23dd22d ... <<<<<MEID>>>>>8b}
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyBuildIdentityForVariant: variant not specified, will use first variant found for this device in build manifest
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyBuildIdentityForVariant: No baseband chipid reported. Will match Build Identity based on ap chipid and boardid only.
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFirmwarePayload: LLB
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFirmwarePayload: SEP
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFirmwarePayload: RestoreSEP
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFirmwarePayload: DeviceTree
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFirmwarePayload: iBoot
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFUDFirmware: AOP
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFUDFirmware: RestoreTrustCache
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFUDFirmware: StaticTrustCache
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFUDFirmware: InputDevice
+patchd: authinstall_log_handler(256): AMAuthInstallBundleCopyPersonalizedURLsMatchingType: Found IsFUDFirmware: MacEFI
+patchd: patchd_common_run_firmware_update_with_options(570): Performing all remaining non-AP firmware updates...
+patchd: mount_all_filesystems_with_error(1016): /dev/disk0s1s1 is already mounted at /mnt1
+patchd: mount_all_filesystems_with_error(1016): /dev/disk0s1s3 is already mounted at /mnt7
+executing /sbin/mount_apfs -R /dev/disk0s1s2 /mnt1/private/var
+entering ramrod_update_device_firmware
+[01:14:53.0965-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x1300] update_iBoot
+ota-step-ids = {0x11031403:59;0x11030564:61;0x11031300:62}
+executing /usr/sbin/nvram ramrod-nvram-sequence=232
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x11031300:update_iBoot}
+executing /usr/sbin/nvram ramrod-nvram-sequence=233
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=234
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=235
+nvram successfully persisted to the filesystem
+'iBoot' update disabled
+[01:14:53.0998-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x1300] update_iBoot
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=236
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=237
+nvram successfully persisted to the filesystem
+ota-step-uptime = 18
+executing /usr/sbin/nvram ramrod-nvram-sequence=238
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=239
+nvram successfully persisted to the filesystem
+[01:14:54.0031-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x130A] install_fud
+ota-step-ids = {0x11031403:59;0x11030564:61;0x1103130A:63}
+executing /usr/sbin/nvram ramrod-nvram-sequence=240
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x1103130A:install_fud}
+executing /usr/sbin/nvram ramrod-nvram-sequence=241
+nvram successfully persisted to the filesystem
+ota-step-uptime = 19
+executing /usr/sbin/nvram ramrod-nvram-sequence=242
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=243
+nvram successfully persisted to the filesystem
+'FUD' update disabled
+[01:14:54.0063-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x130A] install_fud
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=244
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=245
+nvram successfully persisted to the filesystem
+ota-step-uptime = 19
+executing /usr/sbin/nvram ramrod-nvram-sequence=246
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=247
+nvram successfully persisted to the filesystem
+[01:14:54.0095-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x1304] update_stockholm
+ota-step-ids = {0x11031403:59;0x11030564:61;0x11031304:64}
+executing /usr/sbin/nvram ramrod-nvram-sequence=248
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x11031304:update_stockholm}
+executing /usr/sbin/nvram ramrod-nvram-sequence=249
+nvram successfully persisted to the filesystem
+ota-step-uptime = 19
+executing /usr/sbin/nvram ramrod-nvram-sequence=250
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=251
+nvram successfully persisted to the filesystem
+executing /usr/libexec/seputil --ping
+SEP OS is booted
+Getting path for log storage dir on the data partition
+/dev/disk0s1s2 is mounted at /mnt1/private/var.
+CHECKPOINT_INTERNAL_ERROR(checkpoint_storage_make_directories): mkdir /mnt1/private/var/MobileSoftwareUpdate/lastOTA error: File exists
+entering update_stockholm
+patchd: patchd_common_firmware_update_progress(215): operation 4 progress 0
+entering ramrod_nudge_SMC_progress
+Nudging SMC progress percentage by 6
+Read (0xD) for key EFBP
+patchd: patchd_common_firmware_update_progress(235): Recording trace point 31
+ota-breadcrumbs = 2:pBkoe
+executing /usr/sbin/nvram ota-breadcrumbs=2:pBkoe
+executing /usr/sbin/nvram ramrod-nvram-sequence=252
+nvram successfully persisted to the filesystem
+_NfRestoreBundleReadDir:128  /usr/standalone/firmware/nfrestore/firmware/
+_NfRestoreBundleReadDir:128  /usr/standalone/firmware/nfrestore/firmware//fw
+_NfRestoreBundleReadFile:96  PN548_FW_02_01_61_rev65509.bin
+_NfRestoreBundleReadFile:96  PN549_FW_02_01_50_rev66673.bin
+_NfRestoreBundleReadFile:96  PN549_FW_03_01_51_rev66689.bin
+_NfRestoreBundleReadFile:96  PN552_FW_02_01_37_rev72724.bin
+_NfRestoreBundleReadFile:96  SN100V_FW_A3_01_01_1A_rev72310.bin
+_NfRestoreBundleReadDir:128  /usr/standalone/firmware/nfrestore/firmware//jcop-prod
+_NfRestoreBundleReadFile:96  JCOP-01.30-006-P.bin
+_NfRestoreBundleReadFile:96  JCOP-01.30-006-P.sha
+_NfRestoreBundleReadFile:96  JCOP-02.05-017.2-P.bin
+_NfRestoreBundleReadFile:96  JCOP-02.05-017.2-P.sha
+_NfRestoreBundleReadFile:96  JCOP-09.04-004-P.bin
+_NfRestoreBundleReadFile:96  JCOP-09.04-004-P.sha
+NFDriverOpen:3803  com.apple.uart.stockholm flags=0x0
+phTmlNfc_Init:47  
+NFHardwareUARTOpen:536  com.apple.uart.stockholm
+NFHardwareGPIOSetDownloadRequest:65  enable=1
+NFHardwareGPIOSetPower:53  enable=0
+NFHardwareGPIOSetPower:53  enable=1
+NFHardwareUARTSetBaudRate:368  baudRate=115200
+NFRestoreNfcFirmwareNameForController:1044  ROM version 42.02
+NFRestoreNfcForController:1095  Selected file PN552_FW_02_01_37_rev72724.bin
+NFDriverUpdateFirmware:3949  Attempt 1 of 10
+NFHardwareGPIOSetDownloadRequest:65  enable=1
+NFHardwareGPIOSetPower:53  enable=0
+NFHardwareGPIOSetPower:53  enable=1
+NFHardwareUARTSetBaudRate:368  baudRate=115200
+found display: primary
+unable to get framebuffer
+No framebuffer but an internal display. Ok on bridge but weird anywhere else.
+patchd: patchd_common_start_block_invoke_3(2491): nudging progress bar to 2.980000% [2.980000% away from actual progress]
+ramrod_display_set_granular_progress_forced: 2.980000
+entering ramrod_nudge_SMC_progress
+Nudging SMC progress percentage by 6
+Read (0x13) for key EFBP
+NFHardwareGPIOSetDownloadRequest:65  enable=0
+NFHardwareGPIOSetPower:53  enable=0
+NFHardwareGPIOSetPower:53  enable=1
+NFDriverUpdateFirmware:3953  Update successful, previous session state was 0
+NFDriverLoadStack:4127  isLoaded=0
+NFHardwareUARTSetBaudRate:368  baudRate=115200
+NFHardwareGPIOSetDownloadRequest:65  enable=0
+NFHardwareGPIOSetPower:53  enable=0
+NFHardwareGPIOSetPower:53  enable=1
+NFHardwareUARTSetBaudRate:368  baudRate=2400000
+NFHardwareUARTSetBaudRate:368  baudRate=115200
+NFHardwareUARTSetBaudRate:368  baudRate=2400000
+_NFDriverSetupRFClockTimeout:3689  
+_NFDriverSetupRFClockTimeout:3698  change = 0
+_NFDriverSetGenericATxHappenedTimeout:6594  timeout=750 ms
+_NFDriverSetGenericATxHappenedTimeout:6618  toBeforeStdbyCfg=1000 ms
+_NFDriverSetGenericATxHappenedTimeout:6644  successfully set 0xA0BD to 75
+_NFDriverEnumerateSecureElements:3005  Found Host state=1
+_NFDriverEnumerateSecureElements:2950  Found eSE state=1
+_NFDriverConfigureRouting:3373  Routing configuration changed
+_NFDriverSetSEAvailable:3035  Setting SE available to 0x2
+_Async_NFDriverSESelect:2441  type=eSE
+_NFDriverEnumerateSecureElements:3005  Found Host state=1
+_NFDriverEnumerateSecureElements:2950  Found eSE state=1
+NFRestoreNfc:1260  No booster detected
+NFDriverRFSettingsSetup:721  RF config only available on mobile device
+NFDriverUnloadStack:4491  isLoaded=1
+NFHardwareGPIOSetPower:53  enable=0
+NFRestoreJcop:653  
+NFDriverLoadStack:4127  isLoaded=0
+NFHardwareUARTSetBaudRate:368  baudRate=115200
+NFHardwareGPIOSetDownloadRequest:65  enable=0
+NFHardwareGPIOSetPower:53  enable=0
+NFHardwareGPIOSetPower:53  enable=1
+NFHardwareUARTSetBaudRate:368  baudRate=2400000
+NFHardwareUARTSetBaudRate:368  baudRate=115200
+NFHardwareUARTSetBaudRate:368  baudRate=2400000
+_NFDriverSetupRFClockTimeout:3689  
+_NFDriverSetupRFClockTimeout:3698  change = 0
+_NFDriverSetGenericATxHappenedTimeout:6594  timeout=750 ms
+_NFDriverSetGenericATxHappenedTimeout:6618  toBeforeStdbyCfg=1000 ms
+_NFDriverSetGenericATxHappenedTimeout:6644  successfully set 0xA0BD to 75
+_NFDriverEnumerateSecureElements:3005  Found Host state=1
+_NFDriverEnumerateSecureElements:2950  Found eSE state=1
+_NFDriverConfigureRouting:3373  Routing configuration changed
+NfSecureElementOpen:411  
+NfSecureElementSetPower:76  se=1, enabled=1
+NFDriverSetConfiguration:4829  wantsFieldDetect=0 wantsPolling=0 wantsExpress=0 eSE=1 Icefall=0 UICC=0 host=0, hasDiscoveryChanges=0 hasRoutingChanges=1
+_Async_NFDriverSetSEMode:2482  handle=0x160813de0 mode=Wired
+GetOSMode_P73:142  GET OS MODE
+NFDriverSecureElementGetCertificates:296  Storing cert 0 of type 1 and length 237
+NFDriverSecureElementGetCertificates:296  Storing cert 1 of type 2 and length 195
+NFDriverSecureElementGetCertificates:296  Storing cert 2 of type 3 and length 195
+NfSecureElementUpdateOSInfo:54  id=J5Q2M0017F860000 dev=0x73 hw=0x00000005 fw=0x0105 cfw=0x1000 restricted=NO OSUpdate=NO
+NfSecureElementUpdateOSInfo:62  mode=JCOP counter=548 reference=548 osid=0x00 othervalid=0x00
+NfSecureElementUpdateOSInfo:67  migration=Idle pkgs=0 inst=0
+NfSecureElementGarbageCollect:243  Running GC...
+NFRestoreJcopFromFiles:578  Updating JCOP: (1/3) JCOP-01.30-006-P.bin
+NfSecureElementUpdateJCOP:530  No plan for UC=548 RC=548
+NFRestoreJcopFromFiles:613  Failed to find plan, trying next file...
+NFRestoreJcopFromFiles:578  Updating JCOP: (2/3) JCOP-02.05-017.2-P.bin
+NfSecureElementUpdateJCOP:530  No plan for UC=548 RC=548
+NFRestoreJcopFromFiles:613  Failed to find plan, trying next file...
+NFRestoreJcopFromFiles:578  Updating JCOP: (3/3) JCOP-09.04-004-P.bin
+NfSecureElementUpdateJCOP:530  No plan for UC=548 RC=548
+NfSecureElementClose:446  
+NfSecureElementSetPower:76  se=1, enabled=0
+NFDriverSetConfiguration:4829  wantsFieldDetect=0 wantsPolling=0 wantsExpress=0 eSE=0 Icefall=0 UICC=0 host=0, hasDiscoveryChanges=0 hasRoutingChanges=1
+_Async_NFDriverSetSEMode:2482  handle=0x160813de0 mode=Off
+NFDriverUnloadStack:4491  isLoaded=1
+NFHardwareGPIOSetPower:53  enable=0
+NFDriverClose:3844  
+phTmlNfc_Shutdown:139  
+NFHardwareUARTClose:610  
+[01:15:01.0238-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x1304] update_stockholm
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=253
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=254
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=255
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=256
+nvram successfully persisted to the filesystem
+[01:15:01.0335-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x130C] update_aht
+ota-step-ids = {0x11031403:59;0x11030564:61;0x1103130C:65}
+executing /usr/sbin/nvram ramrod-nvram-sequence=257
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x1103130C:update_aht}
+executing /usr/sbin/nvram ramrod-nvram-sequence=258
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=259
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=260
+nvram successfully persisted to the filesystem
+patchd: FUD firmware request being processed...
+[01:15:01.0448-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x130C] update_aht
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=261
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=262
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=263
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=264
+nvram successfully persisted to the filesystem
+[01:15:01.0495-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x1306] update_tcon
+ota-step-ids = {0x11031403:59;0x11030564:61;0x11031306:66}
+executing /usr/sbin/nvram ramrod-nvram-sequence=265
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x11031306:update_tcon}
+executing /usr/sbin/nvram ramrod-nvram-sequence=266
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=267
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=268
+nvram successfully persisted to the filesystem
+entering update_TCON
+tconctl not found
+[01:15:01.0528-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x1306] update_tcon
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=269
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=270
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=271
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=272
+nvram successfully persisted to the filesystem
+[01:15:01.0560-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x1307] update_orion
+ota-step-ids = {0x11031403:59;0x11030564:61;0x11031307:67}
+executing /usr/sbin/nvram ramrod-nvram-sequence=273
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x11031307:update_orion}
+executing /usr/sbin/nvram ramrod-nvram-sequence=274
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=275
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=276
+nvram successfully persisted to the filesystem
+entering update_orion
+AppleOrionMCU service not found
+[01:15:01.0593-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x1307] update_orion
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=277
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=278
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=279
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=280
+nvram successfully persisted to the filesystem
+[01:15:01.0625-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x1308] update_madea
+ota-step-ids = {0x11031403:59;0x11030564:61;0x11031308:68}
+executing /usr/sbin/nvram ramrod-nvram-sequence=281
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x11031308:update_madea}
+executing /usr/sbin/nvram ramrod-nvram-sequence=282
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=283
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=284
+nvram successfully persisted to the filesystem
+entering update_madea
+update_madea: AppleMCDP29XXGPIO service not found
+[01:15:01.0658-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x1308] update_madea
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=285
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=286
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=287
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=288
+nvram successfully persisted to the filesystem
+[01:15:01.0691-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x130E] update_peppy
+ota-step-ids = {0x11031403:59;0x11030564:61;0x1103130E:69}
+executing /usr/sbin/nvram ramrod-nvram-sequence=289
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x1103130E:update_peppy}
+executing /usr/sbin/nvram ramrod-nvram-sequence=290
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=291
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=292
+nvram successfully persisted to the filesystem
+entering device_supports_peppytool
+device_supports_peppytool: No Peppy driver service found
+update_peppy: Device does not support peppytool fw update.
+[01:15:01.0724-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x130E] update_peppy
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=293
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=294
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=295
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=296
+nvram successfully persisted to the filesystem
+[01:15:01.0757-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x130F] update_nitrogen
+ota-step-ids = {0x11031403:59;0x11030564:61;0x1103130F:70}
+executing /usr/sbin/nvram ramrod-nvram-sequence=297
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x1103130F:update_nitrogen}
+executing /usr/sbin/nvram ramrod-nvram-sequence=298
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=299
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=300
+nvram successfully persisted to the filesystem
+device_supports_nitrogen: No nitrogen driver service found
+device does not support nitrogen
+[01:15:01.0790-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x130F] update_nitrogen
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=301
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=302
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=303
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=304
+nvram successfully persisted to the filesystem
+[01:15:01.0822-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x130B] update_usbc
+ota-step-ids = {0x11031403:59;0x11030564:61;0x1103130B:71}
+executing /usr/sbin/nvram ramrod-nvram-sequence=305
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x1103130B:update_usbc}
+executing /usr/sbin/nvram ramrod-nvram-sequence=306
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=307
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=308
+nvram successfully persisted to the filesystem
+entering update_usbc
+No valid USB-C device found. Skipping updater.
+[01:15:01.0856-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x130B] update_usbc
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=309
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=310
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=311
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=312
+nvram successfully persisted to the filesystem
+[01:15:01.0889-GMT]{3>7} CHECKPOINT BEGIN: FIRMWARE:[0x1309] update_se
+ota-step-ids = {0x11031403:59;0x11030564:61;0x11031309:72}
+executing /usr/sbin/nvram ramrod-nvram-sequence=313
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update;0x11031309:update_se}
+executing /usr/sbin/nvram ramrod-nvram-sequence=314
+nvram successfully persisted to the filesystem
+ota-step-uptime = 26
+executing /usr/sbin/nvram ramrod-nvram-sequence=315
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=316
+nvram successfully persisted to the filesystem
+entering update_se
+patchd: patchd_common_firmware_update_progress(215): operation 6 progress 0
+entering ramrod_nudge_SMC_progress
+Nudging SMC progress percentage by 6
+Read (0x19) for key EFBP
+opening /usr/lib/updaters/libSEUpdater.dylib
+creating SEUpdater obj
+SE: [1552526101.930] [INFO] SEUpdaterCreate: Project version: root
+SE: [1552526102.51] [WARNING] parseStartOptions: Additional actions: FTA will be deactivated, MFD will not be performed
+SE: [1552526102.52] [INFO] parseStartOptions: SE Health Test Policy: 
+SE: [1552526102.52] [INFO] parseStartOptions: Perform Factory Postflight requested? NO
+SE: [1552526102.53] [INFO] parseStartOptions: Internal Restore? NO
+SE: [1552526102.196] [WARNING] (null): NFDriverSecureElementGetCertificates:296  Storing cert 0 of type 1 and length 237
+SE: [1552526102.197] [WARNING] (null): NFDriverSecureElementGetCertificates:296  Storing cert 1 of type 2 and length 195
+SE: [1552526102.203] [WARNING] (null): NFDriverSecureElementGetCertificates:296  Storing cert 2 of type 3 and length 195
+SE: [1552526102.241] [INFO] reboot: rebooting
+SE: [1552526102.278] [INFO] sendManifestQuery: P73 detected based on manifest query response
+SE: [1552526102.283] [INFO] sendManifestQuery: Hardware version 5
+SE: [1552526102.284] [INFO] printManifest: MQ: PROD { EXPORT_REQUIRED rsn=0x224 csn=0x224 fsn=0x224 bsn=0x224 FPState=0x22402 IM4P_validated }
+SE: [1552526102.288] [INFO] execCommand: Start processing command: queryInfo
+SE: [1552526102.289] [INFO] reboot: rebooting
+SE: [1552526102.324] [INFO] printManifest: MQ: PROD { EXPORT_REQUIRED rsn=0x224 csn=0x224 fsn=0x224 bsn=0x224 FPState=0x22402 IM4P_validated }
+SE: [1552526102.324] [INFO] execCommand: Finish processing command: queryInfo
+copying SE updater response for loop 0
+patchd: SE updater firmware request being processed...
+SE: [1552526102.340] [INFO] execCommand: Start processing command: performNextStage
+SE: [1552526102.341] [INFO] (null): <CFBasicHash 0x15fea4470 [0x105ba7dd0]>{type = mutable dict, count = 2,
+entries =>
+	0 : <CFString 0x1086f4ef8 [0x105ba7dd0]>{contents = "SE,Ticket"} = <CFData 0x15fea23d0 [0x105ba7dd0]>{length = 1007, capacity = 1007, bytes = 0x<<<<<<<<ICCID>>>>>>>020100318201 ... <<<<<MEID>>>>>c1}
+	2 : <CFString 0x108dbf098 [0x105ba7dd0]>{contents = "FirmwareData"} = <CFData 0x15fea46b0 [0x105ba7dd0]>{length = 6019147, capacity = 6019147, bytes = 0x<<<<<<<<ICCID>>>>>>>5bd83e308202 ... <<<<<MEID>>>>>00}
+}
+
+SE: [1552526102.342] [WARNING] isFPRequired: deviceFPFBSN 0x224 deviceFPREV 2 deliveryBSN 0x224 deliveryFPFRev 2 amStateOK 1 bsnChanged 0 revChanged 0 ret 0SE: [1552526102.343] [INFO] doPerform: FPF: forced 0, torn 0, requested 0, required 0, allowed 1
+SE: [1552526102.353] [INFO] setFTAActivationStatus: Successfully set FTA Activation Status to 0
+SE: [1552526102.362] [WARNING] performSEHealthCheck: SE Health check result: PASS
+SE: [1552526102.363] [INFO] doPerform: Update is done successfully: PROD { EXPORT_REQUIRED rsn=0x224 csn=0x224 fsn=0x224 bsn=0x224 FPState=0x22402 IM4P_validated }
+SE: [1552526102.363] [INFO] execCommand: Finish processing command: performNextStage
+[01:15:02.0382-GMT]{3>7} CHECKPOINT END: FIRMWARE:[0x1309] update_se
+ota-step-ids = {0x11031403:59;0x11030564:61}
+executing /usr/sbin/nvram ramrod-nvram-sequence=317
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030564:ff_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=318
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=319
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=320
+nvram successfully persisted to the filesystem
+entering ramrod_update_firmware_post_sealing
+No steps to process for Checkpoint Engine 22.
+[01:15:02.0430-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0564] ff_firmware_update
+ota-step-ids = {0x11031403:59}
+executing /usr/sbin/nvram ramrod-nvram-sequence=321
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish}
+executing /usr/sbin/nvram ramrod-nvram-sequence=322
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=323
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=324
+nvram successfully persisted to the filesystem
+[01:15:02.0472-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0561] success_cleanup
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=325
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=326
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=327
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=328
+nvram successfully persisted to the filesystem
+[01:15:02.0515-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0541] remove_scratch_path
+ota-step-ids = {0x11031403:59;0x11030561:73;0x11030541:74}
+executing /usr/sbin/nvram ramrod-nvram-sequence=329
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup;0x11030541:remove_scratch_path}
+executing /usr/sbin/nvram ramrod-nvram-sequence=330
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=331
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=332
+nvram successfully persisted to the filesystem
+patchd: patchd_common_success_cleanup_block_invoke(4720): scratch removed
+[01:15:02.0561-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0541] remove_scratch_path
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=333
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=334
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=335
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=336
+nvram successfully persisted to the filesystem
+[01:15:02.0597-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0542] delete_update_partition
+ota-step-ids = {0x11031403:59;0x11030561:73;0x11030542:75}
+executing /usr/sbin/nvram ramrod-nvram-sequence=337
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup;0x11030542:delete_update_partition}
+executing /usr/sbin/nvram ramrod-nvram-sequence=338
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=339
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=340
+nvram successfully persisted to the filesystem
+patchd: Deleted /mnt2/Info.plist
+patchd: Deleted /mnt2/apticket.der
+patchd: Deleted /mnt2/iboot_firmware
+patchd: Deleted /mnt2/devicetree
+patchd: Deleted /mnt2/iBEC
+patchd: Deleted /mnt2/kernelcache
+patchd: Deleted /mnt2/post.bom
+patchd: Deleted /mnt2/private
+patchd: Deleted /mnt2/ramdisk
+patchd: Deleted /mnt2/sep-firmware
+patchd: Deleted /mnt2/sep-i-firmware
+patchd: Deleted /mnt2/var
+patchd: Removing /mnt1/private/var/MobileSoftwareUpdate/lastOTA
+patchd: Deleting contents of /mnt1/private/var/MobileSoftwareUpdate succeeded.
+patchd: patchd_common_success_cleanup_block_invoke_2(4741): Recording trace point 21
+ota-breadcrumbs = 2:pBkoeU
+executing /usr/sbin/nvram ota-breadcrumbs=2:pBkoeU
+executing /usr/sbin/nvram ramrod-nvram-sequence=341
+nvram successfully persisted to the filesystem
+[01:15:02.0652-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0542] delete_update_partition
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=342
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=343
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=344
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=345
+nvram successfully persisted to the filesystem
+[01:15:02.0684-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0544] unlink_update_plist
+ota-step-ids = {0x11031403:59;0x11030561:73;0x11030544:76}
+executing /usr/sbin/nvram ramrod-nvram-sequence=346
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup;0x11030544:unlink_update_plist}
+executing /usr/sbin/nvram ramrod-nvram-sequence=347
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=348
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=349
+nvram successfully persisted to the filesystem
+patchd: patchd_common_success_cleanup_block_invoke(4749): '/mnt1/private/var/MobileSoftwareUpdate/Update.plist' could not be unlinked (2).
+[01:15:02.0716-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0544] unlink_update_plist
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=350
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=351
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=352
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=353
+nvram successfully persisted to the filesystem
+[01:15:02.0748-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0545] reenable_autoboot
+ota-step-ids = {0x11031403:59;0x11030561:73;0x11030545:77}
+executing /usr/sbin/nvram ramrod-nvram-sequence=354
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup;0x11030545:reenable_autoboot}
+executing /usr/sbin/nvram ramrod-nvram-sequence=355
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=356
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=357
+nvram successfully persisted to the filesystem
+[01:15:02.0780-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0545] reenable_autoboot
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=358
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=359
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=360
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=361
+nvram successfully persisted to the filesystem
+[01:15:02.0812-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0546] unlink_restore_log
+ota-step-ids = {0x11031403:59;0x11030561:73;0x11030546:78}
+executing /usr/sbin/nvram ramrod-nvram-sequence=362
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup;0x11030546:unlink_restore_log}
+executing /usr/sbin/nvram ramrod-nvram-sequence=363
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=364
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=365
+nvram successfully persisted to the filesystem
+[01:15:02.0845-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0546] unlink_restore_log
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=366
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=367
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=368
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=369
+nvram successfully persisted to the filesystem
+[01:15:02.0877-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0547] set_progress_100
+ota-step-ids = {0x11031403:59;0x11030561:73;0x11030547:79}
+executing /usr/sbin/nvram ramrod-nvram-sequence=370
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup;0x11030547:set_progress_100}
+executing /usr/sbin/nvram ramrod-nvram-sequence=371
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=372
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 2
+executing /usr/sbin/nvram ramrod-nvram-sequence=373
+nvram successfully persisted to the filesystem
+ramrod_display_set_granular_progress_forced: 100.000000
+[01:15:02.0909-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0547] set_progress_100
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=374
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=375
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=376
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=377
+nvram successfully persisted to the filesystem
+[01:15:02.0941-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0569] wait_for_macefi_firmware_update
+ota-step-ids = {0x11031403:59;0x11030561:73;0x11030569:80}
+executing /usr/sbin/nvram ramrod-nvram-sequence=378
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup;0x11030569:wait_for_macefi_firmware_update}
+executing /usr/sbin/nvram ramrod-nvram-sequence=379
+nvram successfully persisted to the filesystem
+ota-step-uptime = 27
+executing /usr/sbin/nvram ramrod-nvram-sequence=380
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=381
+nvram successfully persisted to the filesystem
+entering ramrod_nudge_SMC_progress
+Asked to jump to percentage: 1.000000
+Read (0x63) for key EFBP
+Read (0x64) for key EFBP
+entering ramrod_wait_for_MacEFI_firmware_update
+entering ramrod_nudge_SMC_progress
+[ramrod_nudge_SMC_progress] skipping... SMC progress is complete
+Read (0x64) for key EFBP
+Read (0x0) for key MSPP
+SystemStateChangeNotification: [subType = 16][arg1 = 0][arg2 = 0]
+[01:15:03.0376-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0569] wait_for_macefi_firmware_update
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=382
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=383
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=384
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=385
+nvram successfully persisted to the filesystem
+[01:15:03.0424-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0548] ota_result_success
+ota-step-ids = {0x11031403:59;0x11030561:73;0x11030548:81}
+executing /usr/sbin/nvram ramrod-nvram-sequence=386
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup;0x11030548:ota_result_success}
+executing /usr/sbin/nvram ramrod-nvram-sequence=387
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=388
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=389
+nvram successfully persisted to the filesystem
+ota-result = success
+executing /usr/sbin/nvram ota-result=success
+executing /usr/sbin/nvram ramrod-nvram-sequence=390
+nvram successfully persisted to the filesystem
+patchd: patchd_common_success_cleanup_block_invoke_5(4794): Recording trace point 23
+ota-breadcrumbs = 2:pBkoeUW
+executing /usr/sbin/nvram ota-breadcrumbs=2:pBkoeUW
+executing /usr/sbin/nvram ramrod-nvram-sequence=391
+nvram successfully persisted to the filesystem
+[01:15:03.0506-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0548] ota_result_success
+ota-step-ids = {0x11031403:59;0x11030561:73}
+executing /usr/sbin/nvram ramrod-nvram-sequence=392
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish;0x11030561:success_cleanup}
+executing /usr/sbin/nvram ramrod-nvram-sequence=393
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=394
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=395
+nvram successfully persisted to the filesystem
+[01:15:03.0547-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0561] success_cleanup
+ota-step-ids = {0x11031403:59}
+executing /usr/sbin/nvram ramrod-nvram-sequence=396
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11031403:ff_finish}
+executing /usr/sbin/nvram ramrod-nvram-sequence=397
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=398
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=399
+nvram successfully persisted to the filesystem
+patchd: patch_failforward_block_invoke(648): Success!
+[01:15:03.0582-GMT]{3>7} CHECKPOINT END: PATCHD:[0x1403] ff_finish
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=400
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=401
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=402
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=403
+nvram successfully persisted to the filesystem
+[01:15:03.0614-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x054A] cleanup_nvram_display
+ota-step-ids = {0x1103054A:82}
+executing /usr/sbin/nvram ramrod-nvram-sequence=404
+nvram successfully persisted to the filesystem
+ota-step-names = {0x1103054A:cleanup_nvram_display}
+executing /usr/sbin/nvram ramrod-nvram-sequence=405
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=406
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=407
+nvram successfully persisted to the filesystem
+executing /usr/sbin/nvram -d ramrod-display-width
+ramrod-display-width
+executing /usr/sbin/nvram ramrod-nvram-sequence=408
+nvram successfully persisted to the filesystem
+patchd: patchd_common_cleanup_block_invoke(4860): nvram variable 'ramrod-display-width' cleared.
+executing /usr/sbin/nvram -d ramrod-display-height
+ramrod-display-height
+executing /usr/sbin/nvram ramrod-nvram-sequence=409
+nvram successfully persisted to the filesystem
+patchd: patchd_common_cleanup_block_invoke(4870): nvram variable 'ramrod-display-height' cleared.
+executing /usr/sbin/nvram -d ramrod-display-rate
+ramrod-display-rate
+executing /usr/sbin/nvram ramrod-nvram-sequence=410
+nvram successfully persisted to the filesystem
+patchd: patchd_common_cleanup_block_invoke(4880): nvram variable 'ramrod-display-rate' cleared.
+[01:15:03.0692-GMT]{3>7} CHECKPOINT END: PATCHD:[0x054A] cleanup_nvram_display
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=411
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=412
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=413
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=414
+nvram successfully persisted to the filesystem
+[01:15:03.0724-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x054B] cleanup_reenable_autoboot
+ota-step-ids = {0x1103054B:83}
+executing /usr/sbin/nvram ramrod-nvram-sequence=415
+nvram successfully persisted to the filesystem
+ota-step-names = {0x1103054B:cleanup_reenable_autoboot}
+executing /usr/sbin/nvram ramrod-nvram-sequence=416
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=417
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=418
+nvram successfully persisted to the filesystem
+auto-boot = true
+executing /usr/sbin/nvram auto-boot=true
+executing /usr/sbin/nvram ramrod-nvram-sequence=419
+nvram successfully persisted to the filesystem
+patchd: patchd_common_cleanup_block_invoke(4903): nvram variable 'auto-boot' reset.
+patchd: patchd_common_cleanup_block_invoke(4904): Recording trace point 24
+ota-breadcrumbs = 2:pBkoeUWX
+executing /usr/sbin/nvram ota-breadcrumbs=2:pBkoeUWX
+executing /usr/sbin/nvram ramrod-nvram-sequence=420
+nvram successfully persisted to the filesystem
+patchd: patchd_common_cleanup_block_invoke(4914): kern.darkboot = 0
+[01:15:03.0786-GMT]{3>7} CHECKPOINT END: PATCHD:[0x054B] cleanup_reenable_autoboot
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=421
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=422
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=423
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=424
+nvram successfully persisted to the filesystem
+[01:15:03.0819-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x054C] cleanup_submit_logs
+ota-step-ids = {0x1103054C:84}
+executing /usr/sbin/nvram ramrod-nvram-sequence=425
+nvram successfully persisted to the filesystem
+ota-step-names = {0x1103054C:cleanup_submit_logs}
+executing /usr/sbin/nvram ramrod-nvram-sequence=426
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=427
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=428
+nvram successfully persisted to the filesystem
+[01:15:03.0851-GMT]{3>7} CHECKPOINT END: PATCHD:[0x054C] cleanup_submit_logs
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=429
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=430
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=431
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=432
+nvram successfully persisted to the filesystem
+[01:15:03.0883-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x0584] cleanup_check_tc_fallback
+ota-step-ids = {0x11030584:85}
+executing /usr/sbin/nvram ramrod-nvram-sequence=433
+nvram successfully persisted to the filesystem
+ota-step-names = {0x11030584:cleanup_check_tc_fallback}
+executing /usr/sbin/nvram ramrod-nvram-sequence=434
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=435
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=436
+nvram successfully persisted to the filesystem
+patchd: patchd_common_cleanup_block_invoke(4995): vm.cs_tc_fallback returned ENOENT; ignoring error
+[01:15:03.0915-GMT]{3>7} CHECKPOINT END: PATCHD:[0x0584] cleanup_check_tc_fallback
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=437
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=438
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=439
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=440
+nvram successfully persisted to the filesystem
+[01:15:03.0947-GMT]{3>7} CHECKPOINT BEGIN: PATCHD:[0x054D] cleanup_unmount_all_filesystems
+ota-step-ids = {0x1103054D:86}
+executing /usr/sbin/nvram ramrod-nvram-sequence=441
+nvram successfully persisted to the filesystem
+ota-step-names = {0x1103054D:cleanup_unmount_all_filesystems}
+executing /usr/sbin/nvram ramrod-nvram-sequence=442
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=443
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=444
+nvram successfully persisted to the filesystem
+patchd: patchd_common_cleanup_block_invoke(5002): 27 seconds elapsed in patchd
+patchd: patchd_common_cleanup_block_invoke(5003): Recording trace point 26
+ota-breadcrumbs = 2:pBkoeUWXZ
+executing /usr/sbin/nvram ota-breadcrumbs=2:pBkoeUWXZ
+executing /usr/sbin/nvram ramrod-nvram-sequence=445
+nvram successfully persisted to the filesystem
+patchd: patchd_common_cleanup_block_invoke(5015): Unlinking dirty exit file
+NVRAM file: {
+    "auto-boot" = true;
+    "backlight-level" = <313939>;
+    "boot-args" = "debug=0x4c0c";
+    "com.apple.System.rtc-offset" = <30783264 66303864 64333030 3030>;
+    "com.apple.System.tz0-size" = 0x1000000;
+    "dfr-burnin-counter" = <c4040000 00000000>;
+    "last-boot-args-script-vers" = <03000000>;
+    "ota-breadcrumbs" = "2:pBkoeUWXZ";
+    "ota-original-os-version" = <31365033 3735>;
+    "ota-os-version" = <31365033 313333>;
+    "ota-outcome" = "initial_engine_fail_forward";
+    "ota-result" = success;
+    "ota-retry-enabled" = <74727565>;
+    "ota-snapshot-update" = <74727565>;
+    "ota-step-ids" = "{0x1103054D:86}";
+    "ota-step-names" = "{0x1103054D:cleanup_unmount_all_filesystems}";
+    "ota-step-uptime" = 28;
+    "ota-step-user-progress" = 100;
+    "ota-submission-url" = <68747470 733a2f2f 78702e61 70706c65 2e636f6d 2f726570 6f7274>;
+    "ota-uuid" = <42303331 37303538 2d434145 452d3431 43352d42 4637322d 41373333 34374132 46333238>;
+    "ramrod-file-only-vars" =     {
+        "auto-boot" = true;
+        "com.apple.System.tz0-size" = 0x1000000;
+        "ota-breadcrumbs" = "2:pBkoeUWXZ";
+        "ota-outcome" = "initial_engine_fail_forward";
+        "ota-result" = success;
+        "ota-step-ids" = "{0x1103054D:86}";
+        "ota-step-names" = "{0x1103054D:cleanup_unmount_all_filesystems}";
+        "ota-step-uptime" = 28;
+        "ota-step-user-progress" = 100;
+        "ramrod-nvram-session" = 1552526075;
+        "ramrod-nvram-shadow-path" = "/mnt2/nvram.plist";
+    };
+    "ramrod-nvram-sequence" = <343435>;
+    "ramrod-nvram-session" = 1552526075;
+    "ramrod-nvram-shadow-path" = "/mnt2/nvram.plist";
+    "ramrod-nvram-shadow-vars" =     {
+        "auto-boot" = <74727565>;
+        "backlight-level" = <313939>;
+        "boot-args" = "debug=0x4c0c";
+        "com.apple.System.rtc-offset" = <30783264 66303864 64333030 3030>;
+        "com.apple.System.tz0-size" = <30783130 30303030 30>;
+        "dfr-burnin-counter" = <c4040000 00000000>;
+        "last-boot-args-script-vers" = <03000000>;
+        "ota-breadcrumbs" = <323a7042 6b6f6555 57585a>;
+        "ota-original-os-version" = <31365033 3735>;
+        "ota-os-version" = <31365033 313333>;
+        "ota-outcome" = <696e6974 69616c5f 656e6769 6e655f66 61696c5f 666f7277 617264>;
+        "ota-result" = <73756363 657373>;
+        "ota-retry-enabled" = <74727565>;
+        "ota-snapshot-update" = <74727565>;
+        "ota-submission-url" = <68747470 733a2f2f 78702e61 70706c65 2e636f6d 2f726570 6f7274>;
+        "ota-uuid" = <42303331 37303538 2d434145 452d3431 43352d42 4637322d 41373333 34374132 46333238>;
+        "ramrod-nvram-sequence" = <343435>;
+        "ramrod-nvram-session" = <31353532 35323630 3735>;
+        "ramrod-nvram-shadow-path" = <2f6d6e74 322f6e76 72616d2e 706c6973 74>;
+    };
+}
+[01:15:03.0997-GMT]{3>7} CHECKPOINT END: PATCHD:[0x054D] cleanup_unmount_all_filesystems
+ota-step-ids = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=446
+nvram successfully persisted to the filesystem
+ota-step-names = {}
+executing /usr/sbin/nvram ramrod-nvram-sequence=447
+nvram successfully persisted to the filesystem
+ota-step-uptime = 28
+executing /usr/sbin/nvram ramrod-nvram-sequence=448
+nvram successfully persisted to the filesystem
+ota-step-user-progress = 100
+executing /usr/sbin/nvram ramrod-nvram-sequence=449
+nvram successfully persisted to the filesystem
+[01:15:04.0029-GMT]{3>7} CHECKPOINT NOTICE: MAIN:[0x0104] handle_new_connections
+[01:15:04.0029-GMT]{3>7} CHECKPOINT FINISHED-ENGINES:(SUCCESS) 
+[01:15:04.0029-GMT]{3>7} CHECKPOINT PROGRESS: SUCCESS (initial_engine_fail_forward) -> (initial_engine_success)
+executing /usr/sbin/nvram -d boot-command
+boot-command
+executing /usr/sbin/nvram ramrod-nvram-sequence=450
+nvram successfully persisted to the filesystem
+executing /usr/sbin/nvram -d upgrade-retry
+upgrade-retry
+executing /usr/sbin/nvram ramrod-nvram-sequence=451
+nvram successfully persisted to the filesystem
+executing /usr/sbin/nvram -d ota-reboot-retry-zone
+ota-reboot-retry-zone
+executing /usr/sbin/nvram ramrod-nvram-sequence=452
+nvram successfully persisted to the filesystem
+ota-outcome = initial_engine_success
+executing /usr/sbin/nvram ota-outcome=initial_engine_success
+executing /usr/sbin/nvram ramrod-nvram-sequence=453
+nvram successfully persisted to the filesystem
+auto-boot = true
+executing /usr/sbin/nvram -s auto-boot=true
+executing /usr/sbin/nvram ramrod-nvram-sequence=454
+nvram successfully persisted to the filesystem
+[01:15:04.0287-GMT]{3>7} CHECKPOINT NOTICE: (NVRAM set) auto-boot=true [sync=true] (engine process terminating)
